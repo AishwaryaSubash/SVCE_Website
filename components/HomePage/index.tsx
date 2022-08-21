@@ -28,7 +28,7 @@ const HomePage = () => {
             className={styles.image}
             src="/images/svce.png"
             alt="SVCE"
-            width={200}
+            width={210}
             height={50}
           />
         </motion.div>

@@ -22,7 +22,7 @@ const LightTooltip = styled(({ className, ...props }: TooltipProps) => (
     color: "rgba(0, 0, 0, 0.87)",
     boxShadow: theme.shadows[1],
     fontSize: 20,
-    fontFamily: "Crimson Pro",
+    fontFamily: "Nunito",
     padding: 10,
     textAlign: "center",
     display: "flex",
