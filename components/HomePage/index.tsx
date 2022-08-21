@@ -5,6 +5,7 @@ import styles from "./HomePage.module.scss";
 import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Card from "../Card";
+import { animate, motion } from "framer-motion";
 
 const theme = createTheme({
   palette: {
@@ -17,16 +18,26 @@ const HomePage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <div className={styles.img}>
+        <motion.div
+          className={styles.img}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.75 }}
+        >
           <Image
             className={styles.image}
             src="/images/svce.png"
             alt="SVCE"
-            width={230}
+            width={200}
             height={50}
           />
-        </div>
-        <div className={styles.btn}>
+        </motion.div>
+        <motion.div
+          className={styles.btn}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.75 }}
+        >
           <ThemeProvider theme={theme}>
             <Button
               variant="contained"
@@ -36,12 +47,10 @@ const HomePage = () => {
               Admission Enquiry
             </Button>
           </ThemeProvider>
-        </div>
+        </motion.div>
       </div>
       <div className={styles.body}>
-        <div className={styles.cards}>
-          <Card />
-        </div>
+        <div className={styles.cards}>{/* <Card /> */}</div>
       </div>
     </div>
   );

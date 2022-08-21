@@ -4,9 +4,10 @@
 .sideBar {
   position: fixed;
   z-index: 1;
+  max-height: 100%;
 }
 .emptyForAReason{
-  width: 76px;
+  width: 80px;
 }
 .hp {
   width: 100%;
