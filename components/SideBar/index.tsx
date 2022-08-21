@@ -65,6 +65,7 @@ const SideBar = () => {
               <Image
                 className={styles.image}
                 src="/images/svce.png"
+                alt="SVCE"
                 width={150}
                 height={25}
               />{" "}
@@ -118,7 +119,7 @@ const SideBar = () => {
                     backgroundColor: `rgba(255,255,255,1)`,
                     color: "#11101d",
                   }
-                : {scale:0.95}
+                : { scale: 0.95 }
             }
           >
             <div
@@ -162,7 +163,7 @@ const SideBar = () => {
                     backgroundColor: `rgba(255,255,255,1)`,
                     color: "#11101d",
                   }
-                : {scale:0.95}
+                : { scale: 0.95 }
             }
           >
             <div
@@ -206,7 +207,7 @@ const SideBar = () => {
                     backgroundColor: `rgba(255,255,255,1)`,
                     color: "#11101d",
                   }
-                : {scale:0.95}
+                : { scale: 0.95 }
             }
           >
             <div
@@ -253,7 +254,7 @@ const SideBar = () => {
                     backgroundColor: `rgba(255,255,255,1)`,
                     color: "#11101d",
                   }
-                : {scale:0.95}
+                : { scale: 0.95 }
             }
           >
             <div
@@ -297,7 +298,7 @@ const SideBar = () => {
                     backgroundColor: `rgba(255,255,255,1)`,
                     color: "#11101d",
                   }
-                : {scale:0.95}
+                : { scale: 0.95 }
             }
           >
             <div
