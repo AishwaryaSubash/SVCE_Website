@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: #11101d;
+}
+
+.clickedContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 250px;
+  height: 100vh;
+  background: #11101d;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+  margin: 20px 10px 10px 10px;
+  color: #fff;
+  font-size: 20px;
+}
+.clickedMenu {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+  margin: 20px 10px 10px 10px;
+  color: #fff;
+  font-size: 20px;
+}
+.options {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.clickedOptions {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.search {
+  background-color: #1d1b31;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.clickedSearch {
+  background-color: #1d1b31;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px;
+  flex: 5;
+  color: #fff;
+  font-size: 25px;
+}
+.clickedLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px;
+  flex: 5;
+  color: #fff;
+  font-size: 25px;
+}
+.icons {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/*
+.icons:hover {
+  background-color: #fff;
+  color: #11101d;
+}
+*/
