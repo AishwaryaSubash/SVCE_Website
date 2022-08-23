@@ -10,19 +10,48 @@
   align-items: center;
   justify-content: space-between;
 }
-.muiBtn,.btn{
-  font-family: 'Nunito', sans-serif;
+.muiBtn,
+.btn {
+  font-family: "Nunito", sans-serif;
 }
 
-@media screen and (max-width:600px) {
-  .container{
+@media screen and (max-width: 600px) {
+  .container {
     width: 90%;
   }
-  .header{
+  .header {
     gap: 20px;
     margin-top: 8%;
   }
-  .muiBtn{
+  .muiBtn {
     font-size: 10px;
   }
+}
+
+// Why SVCE
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 75px;
+}
+.whySvce {
+  width: 25%;
+  z-index: 2;
+  h1 {
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 65px;
+    text-shadow: 4px 4px darkgray;
+  }
+}
+.cards {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 30px;
+  justify-content: center;
+  width: 75%;
+  height: 100%;
+  row-gap: 20px;
 }

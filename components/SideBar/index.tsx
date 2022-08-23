@@ -21,8 +21,7 @@ const LightTooltip = styled(({ className, ...props }: TooltipProps) => (
     backgroundColor: theme.palette.common.white,
     color: "rgba(0, 0, 0, 0.87)",
     boxShadow: theme.shadows[1],
-    fontSize: 20,
-    fontFamily: "Nunito",
+    fontSize: 16,
     padding: 10,
     textAlign: "center",
     display: "flex",
@@ -99,7 +98,11 @@ const SideBar = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.25 }}
       >
-        <LightTooltip title={!clicked ? "Academics" : ""} placement="right">
+        <LightTooltip
+          title={!clicked ? "Academics" : ""}
+          className={styles.tooltip}
+          placement="right"
+        >
           <motion.div
             className={cn({
               [styles.icons]: !clicked,

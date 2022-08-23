@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Card from "../Card";
 import { animate, motion } from "framer-motion";
+import WhySvce from "../WhySvce";
 
 const theme = createTheme({
   palette: {
@@ -50,7 +51,19 @@ const HomePage = () => {
         </motion.div>
       </div>
       <div className={styles.body}>
-        <div className={styles.cards}>{/* <Card /> */}</div>
+        <div className={styles.whySvce}>
+          <h1>Why SVCE?</h1>
+        </div>
+        <div className={styles.cards}>
+          <WhySvce />
+          <WhySvce />
+          <WhySvce />
+          <WhySvce />
+          <WhySvce />
+          <WhySvce />
+          <WhySvce />
+          <WhySvce />
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,37 @@
+.outerContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.image {
+  border-radius: 50%;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .text{
+        font-family: "Nunito",sans-serif;
+        padding: 5px 20px;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+}
