@@ -52,7 +52,7 @@ const HomePage = () => {
       </div>
       <div className={styles.body}>
         <div className={styles.whySvce}>
-          <h1>Why SVCE?</h1>
+          Why SVCE?
         </div>
         <div className={styles.cards}>
           <WhySvce />
