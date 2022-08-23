@@ -2,9 +2,14 @@ import React from "react";
 import Image from "next/image";
 import styles from "./WhySvce.module.scss";
 import { motion } from "framer-motion";
-const WhySvce = () => {
+const WhySvce = ({ delay }: { delay: number }) => {
   return (
-    <motion.div className={styles.outerContainer} initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}}>
+    <motion.div
+      className={styles.outerContainer}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, delay: delay }}
+    >
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <Image
