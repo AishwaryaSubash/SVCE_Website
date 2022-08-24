@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+}
+.sideBar {
+  position: fixed;
+  z-index: 10;
+  max-height: 100%;
+}
+.emptyForAReason {
+  width: 140px;
+}
+.departmentsC {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 100%;
+  overflow-x: scroll;
+  gap: 60px;
+}
+
+.dept {
+  flex: 0 0 200px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.departmentsC::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: #fff3;
+  -webkit-border-radius: 1ex;
+}
+
+.departmentsC::-webkit-scrollbar-thumb {
+  background: #1d1b31;
+  -webkit-border-radius: 1ex;
+}
+
+.departmentsC::-webkit-scrollbar-corner {
+  background: #fff3;
+}
