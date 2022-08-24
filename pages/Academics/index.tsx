@@ -85,7 +85,7 @@ const Academics = () => {
                 <FcElectronics />
               </div>
               <div className={styles.content}>
-                Electrical & Electronics Engineering
+                Electrical &amp; Electronics Engineering
               </div>
             </div>
             <div className={styles.dept}>
@@ -93,14 +93,14 @@ const Academics = () => {
                 <GiElectric />
               </div>
               <div className={styles.content}>
-                Electronics & Communication Engineering
+                Electronics &amp; Communication Engineering
               </div>
             </div>
             <div className={styles.dept}>
               <div className={styles.icon}>
                 <GiBookmark />
               </div>
-              <div className={styles.content}>Humanities & Social Sciences</div>
+              <div className={styles.content}>Humanities &amp; Social Sciences</div>
             </div>
             <div className={styles.dept}>
               <div className={styles.icon}>
