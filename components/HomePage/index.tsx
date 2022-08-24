@@ -51,18 +51,16 @@ const HomePage = () => {
         </motion.div>
       </div>
       <div className={styles.body}>
-        <div className={styles.whySvce}>
-          Why SVCE?
-        </div>
+        <div className={styles.whySvce}>Why SVCE?</div>
         <div className={styles.cards}>
-          <WhySvce delay={0.3}/>
-          <WhySvce delay={0.6}/>
-          <WhySvce delay={0.9}/>
-          <WhySvce delay={1.2}/>
-          <WhySvce delay={1.5}/>
-          <WhySvce delay={1.8}/>
-          <WhySvce delay={2.1}/>
-          <WhySvce delay={2.4}/>
+          <WhySvce delay={0.3} />
+          <WhySvce delay={0.6} />
+          <WhySvce delay={0.9} />
+          <WhySvce delay={1.2} />
+          <WhySvce delay={1.5} />
+          <WhySvce delay={1.8} />
+          <WhySvce delay={2.1} />
+          <WhySvce delay={2.4} />
         </div>
       </div>
     </div>

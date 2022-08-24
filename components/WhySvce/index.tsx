@@ -21,8 +21,8 @@ const WhySvce = ({ delay }: { delay: number }) => {
         </div>
         <div className={styles.content}>
           <p className={styles.text}>
-            One of the top ranked engineering institutes affiliated to Anna
-            University
+            "One of the top ranked engineering institutes affiliated to Anna
+            University"
           </p>
         </div>
       </div>

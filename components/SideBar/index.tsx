@@ -13,6 +13,8 @@ import { HiOutlineAcademicCap, HiMenu } from "react-icons/hi";
 import { SiBookstack } from "react-icons/si";
 import { IoIosFlask } from "react-icons/io";
 import { FaRegNewspaper, FaRegHandshake } from "react-icons/fa";
+import Academics from "../../pages/Academics";
+import Link from "next/link";
 
 const LightTooltip = styled(({ className, ...props }: TooltipProps) => (
   <Tooltip {...props} classes={{ popper: className }} />
@@ -131,16 +133,20 @@ const SideBar = () => {
                 [styles.clickedTextWrapper]: clicked,
               })}
             >
-              <HiOutlineAcademicCap />
+              <Link href="/Academics">
+                <HiOutlineAcademicCap />
+              </Link>
               {clicked && (
-                <motion.div
-                  initial={{ x: 300, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ delay: 0.25 }}
-                  className={styles.clickedText}
-                >
-                  Academics
-                </motion.div>
+                <Link href="/Academics">
+                  <motion.div
+                    initial={{ x: 300, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.25 }}
+                    className={styles.clickedText}
+                  >
+                    Academics
+                  </motion.div>
+                </Link>
               )}
             </div>
           </motion.div>
