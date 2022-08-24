@@ -7,41 +7,67 @@
   max-height: 100%;
 }
 .emptyForAReason {
-  width: 140px;
+  width: 80px;
+  height: 100%;
 }
-.departmentsC {
+.innerContainer{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.mainContainer{
   display: flex;
   align-items: center;
-  justify-content: space-around;
-
-  height: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.departmentC {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(14,1fr);
+  column-gap: 40px;
   overflow-x: scroll;
-  gap: 60px;
 }
 
 .dept {
-  flex: 0 0 200px;
-  gap: 20px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 
-  align-items: center;
-  justify-content: space-around;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  margin: 10px;
 }
-.departmentsC::-webkit-scrollbar {
+.icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  padding: 20px;
+  font-size: 30px;
+}
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+}
+.departmentC::-webkit-scrollbar {
   height: 5px;
   width: 5px;
   background: #fff3;
   -webkit-border-radius: 1ex;
 }
 
-.departmentsC::-webkit-scrollbar-thumb {
+.departmentC::-webkit-scrollbar-thumb {
   background: #1d1b31;
   -webkit-border-radius: 1ex;
 }
 
-.departmentsC::-webkit-scrollbar-corner {
+.departmentC::-webkit-scrollbar-corner {
   background: #fff3;
 }

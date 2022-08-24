@@ -134,19 +134,21 @@ const SideBar = () => {
               })}
             >
               <Link href="/Academics">
-                <HiOutlineAcademicCap />
+                <div>
+                  <HiOutlineAcademicCap />
+                </div>
               </Link>
               {clicked && (
-                <Link href="/Academics">
-                  <motion.div
-                    initial={{ x: 300, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 0.25 }}
-                    className={styles.clickedText}
-                  >
+                <motion.div
+                  initial={{ x: 300, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.25 }}
+                  className={styles.clickedText}
+                >
+                  <Link href="/Academics">
                     Academics
-                  </motion.div>
-                </Link>
+                  </Link>
+                </motion.div>
               )}
             </div>
           </motion.div>
