@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./HomePage.module.scss";
 import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import Card from "../Card";
+
 import { animate, motion } from "framer-motion";
 import WhySvce from "../WhySvce";
 
