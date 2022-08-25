@@ -92,7 +92,7 @@ export const Department: Dept[] = [
     id: 8,
     name: "Department of Computer Science and Engineering",
     mission: [
-      "  Competent and trained faculty enriching the aptitude of the student to generate innovative and effective problem solving skills with professionalism",
+      "Competent and trained faculty enriching the aptitude of the student to generate innovative and effective problem solving skills with professionalism",
       "Providing strong research and state of the art facility to the students to face dynamic challenges of industry and society",
       "Educating the students to be successful, ethical and lifelong learners",
     ],
@@ -131,7 +131,7 @@ export const Department: Dept[] = [
     id: 11,
     name: "Department of Humanities and Social Science",
     mission: [
-      "  To educate and train learners to use English effectively as a communication medium.",
+      "To educate and train learners to use English effectively as a communication medium.",
       "To think freely, critically, clearly",
       "To express lucidly and boldly",
       "To make students interview-ready.",
@@ -157,7 +157,7 @@ export const Department: Dept[] = [
     id: 13,
     name: "Department of Mechanical Engineering",
     mission: [
-      "  To be renowned for offering Programs in the field of Mechanical Engineering that imparts competent technical knowledge alongwith skill, research & innovation, leadership and life skills needed for the students to contribute and achieve at global level.",
+      "To be renowned for offering Programs in the field of Mechanical Engineering that imparts competent technical knowledge alongwith skill, research & innovation, leadership and life skills needed for the students to contribute and achieve at global level.",
       "To provide quality education encompassing recent technological developments by continuously upgrading the academic infrastructure thereby enhancing the technical knowledge of students, teachers and supporting staff which facilitates technical assistance to industrial and societal needs.",
       "To offer need based training to the students in tools relevant to mechanical engineering.",
     ],
