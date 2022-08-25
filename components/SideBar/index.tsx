@@ -22,12 +22,14 @@ const LightTooltip = styled(({ className, ...props }: TooltipProps) => (
     backgroundColor: theme.palette.common.white,
     color: "rgba(0, 0, 0, 0.87)",
     boxShadow: theme.shadows[1],
+    fontFamily: "Nunito",
     fontSize: 16,
     padding: 10,
     textAlign: "center",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    fontWeight: 600,
   },
 }));
 
@@ -81,7 +83,7 @@ const SideBar = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.25 }}
-          onClick={() => setClicked(!clicked)}
+          onClick={() => setClicked(true)}
         >
           <div className={styles.inputContainer}>
             <BsSearch />
@@ -145,9 +147,7 @@ const SideBar = () => {
                   transition={{ delay: 0.25 }}
                   className={styles.clickedText}
                 >
-                  <Link href="/Academics">
-                    Academics
-                  </Link>
+                  <Link href="/Academics">Academics</Link>
                 </motion.div>
               )}
             </div>
