@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { motion } from "framer-motion";
 import { styled, Tooltip, tooltipClasses, TooltipProps } from "@mui/material";
@@ -13,8 +14,6 @@ import { HiOutlineAcademicCap, HiMenu } from "react-icons/hi";
 import { SiBookstack } from "react-icons/si";
 import { IoIosFlask } from "react-icons/io";
 import { FaRegNewspaper, FaRegHandshake } from "react-icons/fa";
-import Academics from "../../pages/Academics";
-import Link from "next/link";
 
 const LightTooltip = styled(({ className, ...props }: TooltipProps) => (
   <Tooltip {...props} classes={{ popper: className }} />
