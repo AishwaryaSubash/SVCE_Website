@@ -40,10 +40,15 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   margin: 10px;
-  background: linear-gradient(-45deg, #000 40%, #fff 0 60%, #000 0) right/300%
+  background: linear-gradient(-45deg, #000 40%, #fff 0 60%, #000 0) right/350%
       100% no-repeat,
-    linear-gradient(-45deg, #0000 40%, #000 0 60%, #0000 0) right/335% 100%
-      no-repeat;
+    linear-gradient(
+        -45deg,
+        rgba(0, 0, 0, 0) 40%,
+        #000 0 60%,
+        rgba(0, 0, 0, 0) 0
+      )
+      right/350% 100% no-repeat;
   -webkit-background-clip: text, padding-box;
   background-clip: text, padding-box;
 }
