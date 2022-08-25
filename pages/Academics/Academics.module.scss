@@ -10,22 +10,23 @@
   width: 80px;
   height: 100%;
 }
-.innerContainer{
+.innerContainer {
   overflow: hidden;
   width: 100%;
   height: 100%;
 }
-.mainContainer{
+.mainContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding: 5px 20px 5px 20px;
 }
 .departmentC {
   display: grid;
   align-items: center;
   justify-content: space-between;
-  grid-template-columns: repeat(14,1fr);
+  grid-template-columns: repeat(14, 1fr);
   column-gap: 40px;
   overflow-x: scroll;
 }
@@ -40,7 +41,7 @@
   border-radius: 10px;
   margin: 10px;
 }
-.icon{
+.icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +49,7 @@
   padding: 20px;
   font-size: 30px;
 }
-.content{
+.content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,16 +57,24 @@
   padding: 20px;
   text-align: center;
 }
+
+@media screen and (max-width: 700px) {
+  .departmentC {
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+}
 .departmentC::-webkit-scrollbar {
   height: 5px;
   width: 5px;
   background: #fff3;
-  -webkit-border-radius: 1ex;
+  border-radius: 1ex;
 }
 
 .departmentC::-webkit-scrollbar-thumb {
   background: #1d1b31;
-  -webkit-border-radius: 1ex;
+  border-radius: 1ex;
 }
 
 .departmentC::-webkit-scrollbar-corner {

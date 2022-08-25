@@ -82,6 +82,7 @@ const SideBar = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.25 }}
+          onClick={() => setClicked(!clicked)}
         >
           <div className={styles.inputContainer}>
             <BsSearch />
