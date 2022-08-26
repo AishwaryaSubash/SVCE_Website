@@ -53,7 +53,10 @@ const HomePage = () => {
       <div className={styles.body}>
         <div className={styles.whySvce}>Why SVCE?</div>
         <div className={styles.cards}>
+          <div className={styles.summa}>
+
           <WhySvce delay={0.3} />
+          </div>
           <WhySvce delay={0.6} />
           <WhySvce delay={0.9} />
           <WhySvce delay={1.2} />

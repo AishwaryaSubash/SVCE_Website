@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SideBar from "../../components/SideBar";
 import styles from "./Academics.module.scss";
 import { FaShip } from "react-icons/fa";
@@ -17,7 +17,9 @@ import { MdEngineering } from "react-icons/md";
 import { TbMathSymbols } from "react-icons/tb";
 import { DiAtom } from "react-icons/di";
 import Head from "next/head";
+import Department from "../../components/Department";
 const Academics = () => {
+  const [dept, setDept] = useState(-1);
   return (
     <div className={styles.container}>
       <Head>
@@ -32,55 +34,55 @@ const Academics = () => {
       <div className={styles.innerContainer}>
         <div className={styles.mainContainer}>
           <div className={styles.departmentC}>
-            <div className={styles.dept}>
+            <div className={styles.dept} onClick={() => setDept(0)}>
               <div className={styles.icon}>
                 <IoIosFlask />
               </div>
               <div className={styles.content}> Applied Chemistry </div>
             </div>
-            <div className={styles.dept}>
+            <div className={styles.dept} onClick={() => setDept(1)}>
               <div className={styles.icon}>
                 <TbMathSymbols />
               </div>
               <div className={styles.content}> Applied Mathematics </div>
             </div>
-            <div className={styles.dept}>
+            <div className={styles.dept} onClick={() => setDept(2)}>
               <div className={styles.icon}>
                 <DiAtom />
               </div>
               <div className={styles.content}> Applied Physics </div>
             </div>
-            <div className={styles.dept}>
+            <div className={styles.dept} onClick={() => setDept(3)}>
               <div className={styles.icon}>
                 <FcAutomotive />
               </div>
               <div className={styles.content}> Automobile Engineering </div>
             </div>
-            <div className={styles.dept}>
+            <div className={styles.dept}onClick={() => setDept(4)}>
               <div className={styles.icon}>
                 <GiMicroscope />
               </div>
               <div className={styles.content}> Biotechnology </div>
             </div>
-            <div className={styles.dept}>
+            <div className={styles.dept} onClick={() => setDept(5)}>
               <div className={styles.icon}>
                 <GiChemicalDrop />
               </div>
               <div className={styles.content}> Chemical Engineering </div>
             </div>
-            <div className={styles.dept}>
+            <div className={styles.dept} onClick={() => setDept(6)}>
               <div className={styles.icon}>
                 <BiBuildingHouse />
               </div>
               <div className={styles.content}> Civil Engineering </div>
             </div>
-            <div className={styles.dept}>
+            <div className={styles.dept} onClick={() => setDept(7)}>
               <div className={styles.icon}>
                 <RiComputerLine />
               </div>
               <div className={styles.content}>Computer Science Engineering</div>
             </div>
-            <div className={styles.dept}>
+            <div className={styles.dept} onClick={() => setDept(8)}>
               <div className={styles.icon}>
                 <FcElectronics />
               </div>
@@ -88,7 +90,7 @@ const Academics = () => {
                 Electrical &amp; Electronics Engineering
               </div>
             </div>
-            <div className={styles.dept}>
+            <div className={styles.dept} onClick={() => setDept(9)}>
               <div className={styles.icon}>
                 <GiElectric />
               </div>
@@ -96,25 +98,27 @@ const Academics = () => {
                 Electronics &amp; Communication Engineering
               </div>
             </div>
-            <div className={styles.dept}>
+            <div className={styles.dept} onClick={() => setDept(10)}>
               <div className={styles.icon}>
                 <GiBookmark />
               </div>
-              <div className={styles.content}>Humanities &amp; Social Sciences</div>
+              <div className={styles.content}>
+                Humanities &amp; Social Sciences
+              </div>
             </div>
-            <div className={styles.dept}>
+            <div className={styles.dept} onClick={() => setDept(11)}>
               <div className={styles.icon}>
                 <GrCloudComputer />
               </div>
               <div className={styles.content}> Information Technology </div>
             </div>
-            <div className={styles.dept}>
+            <div className={styles.dept} onClick={() => setDept(12)}>
               <div className={styles.icon}>
                 <MdEngineering />
               </div>
               <div className={styles.content}> Mechanical Engineering </div>
             </div>
-            <div className={styles.dept}>
+            <div className={styles.dept} onClick={() => setDept(13)}>
               <div className={styles.icon}>
                 <FaShip />
               </div>
@@ -122,6 +126,7 @@ const Academics = () => {
             </div>
           </div>
         </div>
+        <div>{dept != -1 ? <Department select={dept} /> : null}</div>
       </div>
     </div>
   );

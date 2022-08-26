@@ -6,7 +6,7 @@ export interface Dept {
   content: string;
 }
 
-export const Department: Dept[] = [
+export const Departments: Dept[] = [
   {
     id: 1,
     name: "Department of Applied Chemistry",

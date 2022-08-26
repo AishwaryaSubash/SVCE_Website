@@ -37,7 +37,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
+  cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   margin: 10px;
@@ -58,6 +58,9 @@
   transition: 0.8s;
   background-position: left;
   box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
+  background-color: orange;
+  color: #1d1b31;
+  font-weight: 900;
 }
 .icon {
   display: flex;

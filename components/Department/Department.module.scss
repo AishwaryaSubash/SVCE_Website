@@ -1,0 +1,65 @@
+.outerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  width: 95%;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 10px;
+
+  font-family: "Nunito", sans-serif !important;
+}
+.name {
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.content {
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.missionVision {
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+}
+.visionContent {
+  padding-top: 3%;
+}
+.missionContent {
+  padding-top: 2%;
+}
+.mission {
+  margin: 0;
+  flex: 1;
+}
+.vision{
+  flex: 1;
+}
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+  flex-direction: row;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .missionVision {
+    flex-direction: column;
+  }
+}
