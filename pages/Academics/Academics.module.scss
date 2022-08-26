@@ -30,6 +30,7 @@
   grid-template-columns: repeat(14, 1fr);
   column-gap: 40px;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .dept {

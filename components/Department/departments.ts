@@ -37,11 +37,11 @@ export const Departments: Dept[] = [
     name: "Department of Automobile Engineering",
     mission: [
       "Vision achieved by",
-      "Providing the state-of-the-art laboratory facilities to train the learners to cater to the changing needs of the industries and the society.",
-      "Providing opportunities for the learners to bring out their total personality and emphasizing ethical values.",
-      "Preparing the learners to meet the growing challenges of the automotive industry and to fulfill the diverse societal needs of our nation.",
-      "Providing research and intellectual resources to address contemporary and complex problems of the industries and to advance interdisciplinary research and applications.",
-      "Providing compassionate and diverse environment to encourage the students to become innovators and job providers.",
+      "1. Providing the state-of-the-art laboratory facilities to train the learners to cater to the changing needs of the industries and the society.",
+      "2. Providing opportunities for the learners to bring out their total personality and emphasizing ethical values.",
+      "3. Preparing the learners to meet the growing challenges of the automotive industry and to fulfill the diverse societal needs of our nation.",
+      "4. Providing research and intellectual resources to address contemporary and complex problems of the industries and to advance interdisciplinary research and applications.",
+      "5. Providing compassionate and diverse environment to encourage the students to become innovators and job providers.",
     ],
     vision:
       "To be a forerunner in producing Competent and Responsible Engineers in the field of Automobile and Associated areas to meet the ever-changing needs of the Global Automotive Industry and the Society.",
@@ -53,8 +53,8 @@ export const Departments: Dept[] = [
     id: 5,
     name: "Department of Biotechnology",
     mission: [
-      "To progress the department to attain center of excellence in bioinformatics and bioprocess technologies by providing best Undergraduate, Postgraduate, Doctoral programs and R&D activities within a decade.",
-      "To develop special skilled training programs for graduates to meet the personality characters stipulated by the industries within a period of five years.",
+      "1. To progress the department to attain center of excellence in bioinformatics and bioprocess technologies by providing best Undergraduate, Postgraduate, Doctoral programs and R&D activities within a decade.",
+      "2. To develop special skilled training programs for graduates to meet the personality characters stipulated by the industries within a period of five years.",
     ],
     vision:
       "To produce higher caliber Biotechnologists to attain new heights in bioinformatics and bioprocess technology as per industrial needs and to provide leaders in the field of Biotechnology.",
@@ -77,11 +77,11 @@ export const Departments: Dept[] = [
     id: 7,
     name: "Department of Civil Engineering",
     mission: [
-      "Providing state-of-the art resources that contributes to an excellent learning environment.",
-      "Imparting necessary skills, cultivating moral and ethical values.",
-      "Establishing regular interaction and collaboration with industries",
-      "Motivating the students to take up competitive exams and pursue higher education",
-      "Promoting research and development activities in emerging areas of civil engineering and offering services to society and industry through education, research and consultancy activities.",
+      "1. Providing state-of-the art resources that contributes to an excellent learning environment.",
+      "2. Imparting necessary skills, cultivating moral and ethical values.",
+      "3. Establishing regular interaction and collaboration with industries",
+      "4. Motivating the students to take up competitive exams and pursue higher education",
+      "5. Promoting research and development activities in emerging areas of civil engineering and offering services to society and industry through education, research and consultancy activities.",
     ],
     vision:
       "To become a department of excellence in Civil Engineering education and research producing globally competent civil engineers to serve the industry and society.",
@@ -92,9 +92,9 @@ export const Departments: Dept[] = [
     id: 8,
     name: "Department of Computer Science and Engineering",
     mission: [
-      "Competent and trained faculty enriching the aptitude of the student to generate innovative and effective problem solving skills with professionalism",
-      "Providing strong research and state of the art facility to the students to face dynamic challenges of industry and society",
-      "Educating the students to be successful, ethical and lifelong learners",
+      "1. Competent and trained faculty enriching the aptitude of the student to generate innovative and effective problem solving skills with professionalism",
+      "2. Providing strong research and state of the art facility to the students to face dynamic challenges of industry and society",
+      "3. Educating the students to be successful, ethical and lifelong learners",
     ],
     vision:
       "To excel in providing education and research in the field of computer science and engineering in the cutting edge technology so as to produce competence professional at global level",
@@ -117,9 +117,9 @@ export const Departments: Dept[] = [
     id: 10,
     name: "Department of Electronics and Communication Engineering",
     mission: [
-      "To provide the best pedagogical atmosphere of highest quality through modern infrastructure, latest knowledge and cutting edge skills.",
-      "To fulfill the research interests of faculty and students by promoting and sustaining in house research facilities so as to obtain the reputed publications and patents.",
-      "To educate our students, the ethical and moral values, integrity, leadership and other quality aspects to cater to the growing need for values in the society.",
+      "1. To provide the best pedagogical atmosphere of highest quality through modern infrastructure, latest knowledge and cutting edge skills.",
+      "2. To fulfill the research interests of faculty and students by promoting and sustaining in house research facilities so as to obtain the reputed publications and patents.",
+      "3. To educate our students, the ethical and moral values, integrity, leadership and other quality aspects to cater to the growing need for values in the society.",
     ],
     vision:
       "To excel in offering value based quality education in the field of Electronics and Communication Engineering, keeping in pace with the latest developments in technology through exemplary research, to raise the intellectual competence to match global standards and to make significant contributions to the society.",
@@ -131,10 +131,10 @@ export const Departments: Dept[] = [
     id: 11,
     name: "Department of Humanities and Social Science",
     mission: [
-      "To educate and train learners to use English effectively as a communication medium.",
-      "To think freely, critically, clearly",
-      "To express lucidly and boldly",
-      "To make students interview-ready.",
+      "1. To educate and train learners to use English effectively as a communication medium.",
+      "2. To think freely, critically, clearly",
+      "3. To express lucidly and boldly",
+      "4. To make students interview-ready.",
     ],
     vision:
       "Provide standard English education and training to learners, with special attention to regional medium students and make them aware of societal needs besides self improvement",
@@ -157,9 +157,9 @@ export const Departments: Dept[] = [
     id: 13,
     name: "Department of Mechanical Engineering",
     mission: [
-      "To be renowned for offering Programs in the field of Mechanical Engineering that imparts competent technical knowledge alongwith skill, research & innovation, leadership and life skills needed for the students to contribute and achieve at global level.",
-      "To provide quality education encompassing recent technological developments by continuously upgrading the academic infrastructure thereby enhancing the technical knowledge of students, teachers and supporting staff which facilitates technical assistance to industrial and societal needs.",
-      "To offer need based training to the students in tools relevant to mechanical engineering.",
+      "1. To be renowned for offering Programs in the field of Mechanical Engineering that imparts competent technical knowledge alongwith skill, research & innovation, leadership and life skills needed for the students to contribute and achieve at global level.",
+      "2. To provide quality education encompassing recent technological developments by continuously upgrading the academic infrastructure thereby enhancing the technical knowledge of students, teachers and supporting staff which facilitates technical assistance to industrial and societal needs.",
+      "3. To offer need based training to the students in tools relevant to mechanical engineering.",
     ],
     vision:
       "To be a leader in Higher Technical Education and Research by providing the state of the art facilities to transform the learners into global contributors and achievers.",
