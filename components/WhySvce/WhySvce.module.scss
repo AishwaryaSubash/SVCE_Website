@@ -9,10 +9,11 @@
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   height: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  // border-radius: 10px;
+  border: 1px solid black;
 }
 .imageContainer {
   display: flex;

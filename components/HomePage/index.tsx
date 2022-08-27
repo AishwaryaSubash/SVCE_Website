@@ -7,6 +7,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import { animate, motion } from "framer-motion";
 import WhySvce from "../WhySvce";
+import { Grid } from "@mui/material";
 
 const theme = createTheme({
   palette: {
@@ -52,7 +53,7 @@ const HomePage = () => {
       </div>
       <div className={styles.body}>
         <div className={styles.whySvce}>Why SVCE?</div>
-        <div className={styles.cards}>
+        {/* <div className={styles.cards}>
           <div className={styles.summa}>
 
           <WhySvce delay={0.3} />
@@ -64,6 +65,23 @@ const HomePage = () => {
           <WhySvce delay={1.8} />
           <WhySvce delay={2.1} />
           <WhySvce delay={2.4} />
+        </div> */}
+        <div className={styles.summa}>
+          <Grid container spacing={2} xs={12}>
+              <Grid container xs={6}>
+                <Grid item={true} xs={12}>
+                  <WhySvce delay={0.3} height={`100%`} />
+                </Grid>
+                <Grid item={true} xs={12}>
+                  <WhySvce delay={0.6} height={`100%`} />
+                </Grid>
+              </Grid>
+              <Grid container xs={6}>
+                <Grid item={true} xs={12}>
+                  <WhySvce delay={0.9} height={`100%`} />
+                </Grid>
+              </Grid>
+          </Grid>
         </div>
       </div>
     </div>
