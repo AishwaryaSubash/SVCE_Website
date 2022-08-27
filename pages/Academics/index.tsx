@@ -353,8 +353,8 @@ const Academics = () => {
             </motion.div>
           </div>
         </div>
-        <div>{dept != -1 ? <Department select={dept} /> : null} </div>
         <div ref={scroll}></div>
+        <div>{dept != -1 ? <Department select={dept} /> : null} </div>
       </div>
     </div>
   );
