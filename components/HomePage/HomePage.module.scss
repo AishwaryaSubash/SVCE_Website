@@ -2,9 +2,10 @@
   width: 95%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .mainGrid {
-  margin: 0;
+  margin: 5px;
 }
 .header {
   height: 50px;
