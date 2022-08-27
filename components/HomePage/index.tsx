@@ -67,8 +67,8 @@ const HomePage = () => {
           <WhySvce delay={2.4} />
         </div> */}
         <div className={styles.summa}>
-          <Grid container spacing={2} xs={12} className={styles.mainGrid}>
-            <Grid container xs={6}>
+          <Grid container item={true} spacing={2} xs={12} className={styles.mainGrid}>
+            <Grid container item={true} xs={6}>
               <Grid item={true} xs={12}>
                 <WhySvce delay={0.3} height={`100%`} />
               </Grid>
@@ -76,21 +76,21 @@ const HomePage = () => {
                 <WhySvce delay={0.6} height={`100%`} />
               </Grid>
             </Grid>
-            <Grid container xs={6}>
+            <Grid container item={true} xs={6}>
               <Grid item={true} xs={12}>
                 <WhySvce delay={0.9} height={`100%`} />
               </Grid>
             </Grid>
-            <Grid container xs={12}>
+            <Grid container item={true} xs={12}>
               <Grid item={true} xs={12}>
                 <WhySvce delay={0.9} height={`100%`} />
               </Grid>
             </Grid>
-            <Grid container xs={12}>
+            <Grid container item={true} xs={12}>
               <Grid item={true} xs={6}>
                 <WhySvce delay={0.9} height={`100%`} />
               </Grid>
-              <Grid container xs={6}>
+              <Grid container item={true} xs={6}>
                 <Grid item={true} xs={12}>
                   <WhySvce delay={0.3} height={`100%`} />
                 </Grid>
