@@ -181,13 +181,21 @@
 }
 */
 @media screen and (max-width: 600px) {
-  .clickedText{
+  .clickedText {
     font-size: 18px;
   }
- .clickedContainer{
-  gap: 20px;
- } 
-  .clickedLinks{
+  .container{
+    gap: 30px;
+  }
+  .clickedContainer {
+    gap: 20px;
+  }
+  .links {
+    justify-content: normal;
+    align-items: center;
+    gap: 50px;
+  }
+  .clickedLinks {
     justify-content: normal;
     align-items: center;
     gap: 70px;
