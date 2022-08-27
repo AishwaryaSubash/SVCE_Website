@@ -27,7 +27,7 @@ const Academics = () => {
   const [dept, setDept] = useState<number>(-1);
   const scroll = useRef() as React.MutableRefObject<HTMLInputElement>;
   const matches = useMediaQuery("(max-width:700px)");
-
+  const showSideBar = useMediaQuery("(max-width:600px)");
   const selectDepartment = (id: number) => {
     setDept(id);
   };
@@ -47,7 +47,7 @@ const Academics = () => {
       <div className={styles.sideBar}>
         <SideBar />
       </div>
-      <div className={styles.emptyForAReason}></div>
+      {!showSideBar && <div className={styles.emptyForAReason}></div>}
       <div className={styles.innerContainer}>
         <div className={styles.mainContainer}>
           <div className={styles.departmentC}>

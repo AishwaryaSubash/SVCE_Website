@@ -184,7 +184,7 @@
   .clickedText {
     font-size: 18px;
   }
-  .container{
+  .container {
     gap: 30px;
   }
   .clickedContainer {
@@ -199,5 +199,22 @@
     justify-content: normal;
     align-items: center;
     gap: 70px;
+  }
+  .links {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  .container {
+    background-color: transparent;
+    height: 50px;
+  }
+  .menu {
+    background-color: #1d1b3172;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    display: block;
   }
 }

@@ -1,3 +1,4 @@
+import { useMediaQuery } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import HomePage from "../components/HomePage";
@@ -5,6 +6,7 @@ import SideBar from "../components/SideBar";
 import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
+  const showSideBar = useMediaQuery("(max-width:600px)");
   return (
     <div className={styles.container}>
       <Head>
@@ -16,7 +18,7 @@ const Home: NextPage = () => {
       <div className={styles.sideBar}>
         <SideBar />
       </div>
-      <div className={styles.emptyForAReason}></div>
+      {!showSideBar && <div className={styles.emptyForAReason}></div>}
       <div className={styles.hp}>
         <HomePage />
       </div>
