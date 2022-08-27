@@ -22,8 +22,10 @@ const WhySvce = ({ delay, height }: { delay: number; height: string }) => {
         </div>
         <div className={styles.content}>
           <p className={styles.text}>
-            One of the top ranked engineering institutes affiliated to Anna
-            University
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc id
+            cursus metus aliquam. Tortor aliquam nulla facilisi cras fermentum
+            odio eu feugiat pretium.
           </p>
         </div>
       </div>
