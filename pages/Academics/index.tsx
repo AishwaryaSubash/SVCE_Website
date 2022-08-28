@@ -54,26 +54,20 @@ const Academics = () => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        {!showSideBar && (
-          <div className={styles.sideBar}>
-            <SideBar />
-          </div>
-        )}
+        <div className={styles.sideBar}>
+          <SideBar />
+        </div>
+
         {!showSideBar && <div className={styles.emptyForAReason}></div>}
         <div className={styles.innerContainer}>
           <header className={styles.header}>
-            {showSideBar && (
-              <div className={styles.sideBar}>
-                <SideBar />
-              </div>
-            )}
             {showSideBar && <div className={styles.emptyForAReason}></div>}
             <Image
               className={styles.image}
               src="/images/svce.png"
               alt="SVCE"
-              width={180}
-              height={40}
+              width={150}
+              height={30}
             />
           </header>
           <div className={styles.mainContainer}>
