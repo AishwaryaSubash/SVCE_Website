@@ -1,11 +1,13 @@
 import { useMediaQuery } from "@mui/material";
 import type { NextPage } from "next";
+import dynamic from "next/dynamic";
 import Head from "next/head";
-import Background from "../components/Background";
 import HomePage from "../components/HomePage";
 import SideBar from "../components/SideBar";
 import styles from "../styles/Home.module.scss";
-
+const Background = dynamic(() => import("../components/Background"), {
+  ssr: false,
+});
 const Home: NextPage = () => {
   const showSideBar = useMediaQuery("(max-width:600px)");
   return (

@@ -20,10 +20,13 @@ import { BiBuildingHouse } from "react-icons/bi";
 import { MdEngineering } from "react-icons/md";
 import { TbMathSymbols } from "react-icons/tb";
 import { DiAtom } from "react-icons/di";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import Background from "../../components/Background";
+import dynamic from "next/dynamic";
 
+const Background = dynamic(() => import("../../components/Background"), {
+  ssr: false,
+});
 const Academics = () => {
   const [dept, setDept] = useState<number>(-1);
   const scroll = useRef() as React.MutableRefObject<HTMLInputElement>;

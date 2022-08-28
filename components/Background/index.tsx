@@ -1,9 +1,11 @@
 import styles from "./Background.module.scss";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "@mui/material";
+import useWindowDimensions from "../../Hooks/useWindowDimensions";
 
 const Background = () => {
-  const showCurve = useMediaQuery("(max-width:700px)");
+  const showCurve = useMediaQuery("(max-width:800px)");
+  const { width, height } = useWindowDimensions();
 
   return (
     <svg
@@ -11,6 +13,8 @@ const Background = () => {
       className={styles.svg}
       width="100%"
       height="100%"
+      viewBox={`0 0 ${width} ${height}`}
+      preserveAspectRatio="none"
       xmlns="http://www.w3.org/2000/svg"
       version="1.1"
     >
@@ -221,7 +225,7 @@ const Background = () => {
         </linearGradient>
       </defs>
       {!showCurve && (
-        <g transform="translate(960, 0)" className={styles.g}>
+        <motion.g className={styles.g}>
           <motion.path
             d="M0 540C-91.2 521.3 -182.5 502.5 -265.5 459.9C-348.5 417.2 -423.3 350.6 -467.7 270C-512 189.4 -526 94.7 -540 0L0 0Z"
             fill="#051a31"
@@ -271,9 +275,9 @@ const Background = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           ></motion.path>
-        </g>
+        </motion.g>
       )}
-      <g transform="translate(0, 540)" className={styles.gg}>
+      <motion.g className={styles.gg}>
         <motion.path
           d="M0 -540C94.5 -525.9 188.9 -511.8 270 -467.7C351.1 -423.5 418.8 -349.4 461.6 -266.5C504.4 -183.6 522.2 -91.8 540 0L0 0Z"
           fill="#051a31"
@@ -323,7 +327,7 @@ const Background = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         ></motion.path>
-      </g>
+      </motion.g>
     </svg>
   );
 };
