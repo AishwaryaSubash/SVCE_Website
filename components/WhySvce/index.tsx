@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "./WhySvce.module.scss";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "@mui/material";
 const WhySvce = ({
   delay,
   height,
@@ -12,6 +13,7 @@ const WhySvce = ({
   x,
   y,
   duration,
+  fontWeight,
 }: {
   delay: number;
   height: string;
@@ -22,10 +24,13 @@ const WhySvce = ({
   x: number;
   y: number;
   duration: number;
+  fontWeight: number;
 }) => {
+  const allowDrag = useMediaQuery("(max-width:600px)");
+
   return (
     <motion.div
-      drag
+      drag={!allowDrag}
       dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
       dragElastic={0.06}
       className={styles.outerContainer}
@@ -45,7 +50,7 @@ const WhySvce = ({
           />
         </div>
         <div className={styles.content}>
-          <p style={{ fontSize }} className={styles.text}>
+          <p style={{ fontSize, fontWeight }} className={styles.text}>
             {text}
           </p>
         </div>

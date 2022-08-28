@@ -5,9 +5,9 @@ import styles from "./HomePage.module.scss";
 import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import WhySvce from "../WhySvce";
-import { Grid } from "@mui/material";
+import { Grid, useMediaQuery } from "@mui/material";
 
 const theme = createTheme({
   palette: {
@@ -17,6 +17,7 @@ const theme = createTheme({
   },
 });
 const HomePage = () => {
+  const fontSelect = useMediaQuery("(max-width:600px)");
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -88,7 +89,8 @@ const HomePage = () => {
                   picture={"/images/certified-icon.svg"}
                   text={"Accredited by NAAC and NBA"}
                   bgColor={"#A1BE95"}
-                  fontSize={35}
+                  fontSize={!fontSelect ? 35 : 20}
+                  fontWeight={!fontSelect ? 900 : 600}
                   x={-100}
                   y={0}
                   duration={1}
@@ -103,7 +105,8 @@ const HomePage = () => {
                     "Highest placement offers of Rs.25 LPA and 20 LPA in Amazon"
                   }
                   bgColor={"#E2DFA2"}
-                  fontSize={35}
+                  fontSize={!fontSelect ? 35 : 20}
+                  fontWeight={!fontSelect ? 900 : 600}
                   x={-100}
                   y={0}
                   duration={1}
@@ -120,7 +123,8 @@ const HomePage = () => {
                     "One of the top ranked engineering Insitutes affiliated to Anna University"
                   }
                   bgColor={"#92AAC7"}
-                  fontSize={50}
+                  fontSize={!fontSelect ? 50 : 40}
+                  fontWeight={!fontSelect ? 900 : 600}
                   x={0}
                   y={-100}
                   duration={1}
@@ -137,7 +141,8 @@ const HomePage = () => {
                     "High qualified faculty and staff with an average experience of over 20 years"
                   }
                   bgColor={" #5BC8AC"}
-                  fontSize={35}
+                  fontSize={!fontSelect ? 35 : 20}
+                  fontWeight={!fontSelect ? 900 : 600}
                   x={0}
                   y={0}
                   duration={1}
@@ -158,7 +163,8 @@ const HomePage = () => {
                   picture={"/images/world-svgrepo-com.svg"}
                   text={"Over 28% of the alumni work abroad"}
                   bgColor={"#98DBC6"}
-                  fontSize={50}
+                  fontSize={!fontSelect ? 50 : 40}
+                  fontWeight={!fontSelect ? 900 : 600}
                   x={0}
                   y={100}
                   duration={1}
@@ -180,7 +186,8 @@ const HomePage = () => {
                       "World class Laboratories to foster innovation and research"
                     }
                     bgColor={"#F18D9E"}
-                    fontSize={35}
+                    fontSize={!fontSelect ? 35 : 20}
+                    fontWeight={!fontSelect ? 900 : 600}
                     x={100}
                     y={0}
                     duration={1}
@@ -195,7 +202,8 @@ const HomePage = () => {
                       "Alumni working in fortune 500 companies like Google, Microsoft, Facebook, Mercedes Benz, etc"
                     }
                     bgColor={"#D9B44A"}
-                    fontSize={35}
+                    fontSize={!fontSelect ? 35 : 20}
+                    fontWeight={!fontSelect ? 900 : 600}
                     x={100}
                     y={0}
                     duration={1}
