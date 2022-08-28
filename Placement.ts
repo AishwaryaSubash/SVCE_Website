@@ -37,13 +37,13 @@ export const Statistics: Stats[] = [
   },
   {
     id: 7,
-    name: "Placements",
-    count: 98.82,
+    name: "Funded Projects (Live)",
+    count: 22,
   },
   {
     id: 8,
-    name: "Funded Projects (Live)",
-    count: 22,
+    name: "Placements",
+    count: 98.82,
   },
   {
     id: 9,

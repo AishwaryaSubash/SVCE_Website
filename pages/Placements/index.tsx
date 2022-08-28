@@ -5,8 +5,10 @@ import CountUp from "react-countup";
 import styles from "./Placements.module.scss";
 import cn from "classnames";
 import Head from "next/head";
+import { useMediaQuery } from "@mui/material";
 
 const Placements = ({ select }: { select: number }) => {
+  const showSideBar = useMediaQuery("(max-width:600px)");
   return (
     <div className={styles.container}>
       <Head>
@@ -17,7 +19,7 @@ const Placements = ({ select }: { select: number }) => {
       <div className={styles.sideBar}>
         <SideBar />
       </div>
-      <div className={styles.emptyForAReason}></div>
+      {!showSideBar && <div className={styles.emptyForAReason}></div>}
       <div className={styles.innerContainer}>
         <div className={styles.mainContainer}>
           <div className={styles.textContainer}>
@@ -86,25 +88,35 @@ const Placements = ({ select }: { select: number }) => {
                       [styles.stats9]: s.id === 9,
                     })}
                   >
-                    <div>
+                    <div
+                      className={cn({
+                        [styles.s1]: s.id === 1,
+                        [styles.s2]: s.id === 2,
+                        [styles.s3]: s.id === 3,
+                        [styles.s4]: s.id === 4,
+                        [styles.s5]: s.id === 5,
+                        [styles.s6]: s.id === 6,
+                        [styles.s7]: s.id === 7,
+                        [styles.s8]: s.id === 8,
+                        [styles.s9]: s.id === 9,
+                      })}
+                    >
                       {s.name}
-                      <div>
-                        <CountUp
-                          start={0}
-                          end={s.count}
-                          delay={3}
-                          decimals={s.id == 7 ? 2 : 0}
-                          suffix={s.id == 7 ? "%" : ""}
-                          onStart={() => console.log("hi")}
-                          redraw={true}
-                        >
-                          {({ countUpRef }) => (
-                            <div>
-                              <span ref={countUpRef} />
-                            </div>
-                          )}
-                        </CountUp>
-                      </div>
+                      <CountUp
+                        start={0}
+                        end={s.count}
+                        delay={3}
+                        decimals={s.id == 8 ? 2 : 0}
+                        suffix={s.id == 8 ? "%" : ""}
+                        onStart={() => console.log("hi")}
+                        redraw={true}
+                      >
+                        {({ countUpRef }) => (
+                          <div>
+                            <span ref={countUpRef} />
+                          </div>
+                        )}
+                      </CountUp>
                     </div>
                   </div>
                 );
