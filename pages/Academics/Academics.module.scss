@@ -2,6 +2,16 @@
   display: flex;
   font-family: "Nunito", sans-serif !important;
 }
+.bg {
+  position: fixed;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+}
+.desktop {
+  position: relative;
+}
 .sideBar {
   position: fixed;
   z-index: 10;
@@ -52,6 +62,7 @@
       )
       right/375% 100% no-repeat;
   -webkit-background-clip: text, padding-box;
+  background-color: #ffffffaf;
   background-clip: text, padding-box;
 }
 

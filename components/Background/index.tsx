@@ -1,7 +1,10 @@
 import styles from "./Background.module.scss";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "@mui/material";
 
 const Background = () => {
+  const showCurve = useMediaQuery("(max-width:700px)");
+
   return (
     <svg
       id="visual"
@@ -217,57 +220,59 @@ const Background = () => {
           ></stop>
         </linearGradient>
       </defs>
-      <g transform="translate(960, 0)" className={styles.g}>
-        <motion.path
-          d="M0 540C-91.2 521.3 -182.5 502.5 -265.5 459.9C-348.5 417.2 -423.3 350.6 -467.7 270C-512 189.4 -526 94.7 -540 0L0 0Z"
-          fill="#051a31"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 2.2 }}
-        ></motion.path>
-        <motion.path
-          d="M0 462.9C-78.2 446.8 -156.4 430.7 -227.6 394.2C-298.7 357.6 -362.8 300.5 -400.8 231.4C-438.9 162.3 -450.9 81.2 -462.9 0L0 0Z"
-          fill="#252752"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 2 }}
-        ></motion.path>
-        <motion.path
-          d="M0 385.7C-65.2 372.3 -130.4 358.9 -189.6 328.5C-248.9 298 -302.3 250.4 -334 192.9C-365.7 135.3 -375.7 67.6 -385.7 0L0 0Z"
-          fill="#552c69"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.8 }}
-        ></motion.path>
-        <motion.path
-          d="M0 308.6C-52.1 297.9 -104.3 287.2 -151.7 262.8C-199.1 238.4 -241.9 200.4 -267.2 154.3C-292.6 108.2 -300.6 54.1 -308.6 0L0 0Z"
-          fill="#8d2871"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.6 }}
-        ></motion.path>
-        <motion.path
-          d="M0 231.4C-39.1 223.4 -78.2 215.4 -113.8 197.1C-149.4 178.8 -181.4 150.3 -200.4 115.7C-219.4 81.2 -225.4 40.6 -231.4 0L0 0Z"
-          fill="#c21d68"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.4 }}
-        ></motion.path>
-        <motion.path
-          d="M0 154.3C-26.1 148.9 -52.1 143.6 -75.9 131.4C-99.6 119.2 -120.9 100.2 -133.6 77.1C-146.3 54.1 -150.3 27.1 -154.3 0L0 0Z"
-          fill="#eb294e"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.2 }}
-        ></motion.path>
-        <motion.path
-          d="M0 77.1C-13 74.5 -26.1 71.8 -37.9 65.7C-49.8 59.6 -60.5 50.1 -66.8 38.6C-73.1 27.1 -75.1 13.5 -77.1 0L0 0Z"
-          fill="#fa3c3c"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        ></motion.path>
-      </g>
+      {!showCurve && (
+        <g transform="translate(960, 0)" className={styles.g}>
+          <motion.path
+            d="M0 540C-91.2 521.3 -182.5 502.5 -265.5 459.9C-348.5 417.2 -423.3 350.6 -467.7 270C-512 189.4 -526 94.7 -540 0L0 0Z"
+            fill="#051a31"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2.2 }}
+          ></motion.path>
+          <motion.path
+            d="M0 462.9C-78.2 446.8 -156.4 430.7 -227.6 394.2C-298.7 357.6 -362.8 300.5 -400.8 231.4C-438.9 162.3 -450.9 81.2 -462.9 0L0 0Z"
+            fill="#252752"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+          ></motion.path>
+          <motion.path
+            d="M0 385.7C-65.2 372.3 -130.4 358.9 -189.6 328.5C-248.9 298 -302.3 250.4 -334 192.9C-365.7 135.3 -375.7 67.6 -385.7 0L0 0Z"
+            fill="#552c69"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.8 }}
+          ></motion.path>
+          <motion.path
+            d="M0 308.6C-52.1 297.9 -104.3 287.2 -151.7 262.8C-199.1 238.4 -241.9 200.4 -267.2 154.3C-292.6 108.2 -300.6 54.1 -308.6 0L0 0Z"
+            fill="#8d2871"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.6 }}
+          ></motion.path>
+          <motion.path
+            d="M0 231.4C-39.1 223.4 -78.2 215.4 -113.8 197.1C-149.4 178.8 -181.4 150.3 -200.4 115.7C-219.4 81.2 -225.4 40.6 -231.4 0L0 0Z"
+            fill="#c21d68"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.4 }}
+          ></motion.path>
+          <motion.path
+            d="M0 154.3C-26.1 148.9 -52.1 143.6 -75.9 131.4C-99.6 119.2 -120.9 100.2 -133.6 77.1C-146.3 54.1 -150.3 27.1 -154.3 0L0 0Z"
+            fill="#eb294e"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.2 }}
+          ></motion.path>
+          <motion.path
+            d="M0 77.1C-13 74.5 -26.1 71.8 -37.9 65.7C-49.8 59.6 -60.5 50.1 -66.8 38.6C-73.1 27.1 -75.1 13.5 -77.1 0L0 0Z"
+            fill="#fa3c3c"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          ></motion.path>
+        </g>
+      )}
       <g transform="translate(0, 540)" className={styles.gg}>
         <motion.path
           d="M0 -540C94.5 -525.9 188.9 -511.8 270 -467.7C351.1 -423.5 418.8 -349.4 461.6 -266.5C504.4 -183.6 522.2 -91.8 540 0L0 0Z"
