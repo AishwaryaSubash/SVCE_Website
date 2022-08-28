@@ -63,8 +63,8 @@ const Academics = () => {
                 className={styles.dept}
                 initial={
                   matches
-                    ? { x: -200, y: 0, opacity: 0.5 }
-                    : { y: -200, x: 0, opacity: 0.5 }
+                    ? { x: -300, y: 0, opacity: 0.5 }
+                    : { y: -300, x: 0, opacity: 0.5 }
                 }
                 animate={
                   matches
@@ -83,8 +83,8 @@ const Academics = () => {
               <motion.div
                 initial={
                   matches
-                    ? { x: 200, y: 0, opacity: 0.5 }
-                    : { y: 200, x: 0, opacity: 0.5 }
+                    ? { x: 300, y: 0, opacity: 0.5 }
+                    : { y: 300, x: 0, opacity: 0.5 }
                 }
                 animate={
                   matches
@@ -104,8 +104,8 @@ const Academics = () => {
               <motion.div
                 initial={
                   matches
-                    ? { x: -200, y: 0, opacity: 0.5 }
-                    : { y: -200, x: 0, opacity: 0.5 }
+                    ? { x: -300, y: 0, opacity: 0.5 }
+                    : { y: -300, x: 0, opacity: 0.5 }
                 }
                 animate={
                   matches
@@ -125,8 +125,8 @@ const Academics = () => {
               <motion.div
                 initial={
                   matches
-                    ? { x: 200, y: 0, opacity: 0.5 }
-                    : { y: 200, x: 0, opacity: 0.5 }
+                    ? { x: 300, y: 0, opacity: 0.5 }
+                    : { y: 300, x: 0, opacity: 0.5 }
                 }
                 animate={
                   matches
@@ -146,8 +146,8 @@ const Academics = () => {
               <motion.div
                 initial={
                   matches
-                    ? { x: -200, y: 0, opacity: 0.5 }
-                    : { y: -200, x: 0, opacity: 0.5 }
+                    ? { x: -300, y: 0, opacity: 0.5 }
+                    : { y: -300, x: 0, opacity: 0.5 }
                 }
                 animate={
                   matches
@@ -167,8 +167,8 @@ const Academics = () => {
               <motion.div
                 initial={
                   matches
-                    ? { x: 200, y: 0, opacity: 0.5 }
-                    : { y: 200, x: 0, opacity: 0.5 }
+                    ? { x: 300, y: 0, opacity: 0.5 }
+                    : { y: 300, x: 0, opacity: 0.5 }
                 }
                 animate={
                   matches
@@ -188,8 +188,8 @@ const Academics = () => {
               <motion.div
                 initial={
                   matches
-                    ? { x: -200, y: 0, opacity: 0.5 }
-                    : { y: -200, x: 0, opacity: 0.5 }
+                    ? { x: -300, y: 0, opacity: 0.5 }
+                    : { y: -300, x: 0, opacity: 0.5 }
                 }
                 animate={
                   matches
@@ -209,8 +209,8 @@ const Academics = () => {
               <motion.div
                 initial={
                   matches
-                    ? { x: 200, y: 0, opacity: 0.5 }
-                    : { y: 200, x: 0, opacity: 0.5 }
+                    ? { x: 300, y: 0, opacity: 0.5 }
+                    : { y: 300, x: 0, opacity: 0.5 }
                 }
                 animate={
                   matches
@@ -232,8 +232,8 @@ const Academics = () => {
               <motion.div
                 initial={
                   matches
-                    ? { x: -200, y: 0, opacity: 0.5 }
-                    : { y: -200, x: 0, opacity: 0.5 }
+                    ? { x: -300, y: 0, opacity: 0.5 }
+                    : { y: -300, x: 0, opacity: 0.5 }
                 }
                 animate={
                   matches
@@ -255,8 +255,8 @@ const Academics = () => {
               <motion.div
                 initial={
                   matches
-                    ? { x: 200, y: 0, opacity: 0.5 }
-                    : { y: 200, x: 0, opacity: 0.5 }
+                    ? { x: 300, y: 0, opacity: 0.5 }
+                    : { y: 300, x: 0, opacity: 0.5 }
                 }
                 animate={
                   matches
@@ -278,8 +278,8 @@ const Academics = () => {
               <motion.div
                 initial={
                   matches
-                    ? { x: -200, y: 0, opacity: 0.5 }
-                    : { y: -200, x: 0, opacity: 0.5 }
+                    ? { x: -300, y: 0, opacity: 0.5 }
+                    : { y: -300, x: 0, opacity: 0.5 }
                 }
                 animate={
                   matches
@@ -301,8 +301,8 @@ const Academics = () => {
               <motion.div
                 initial={
                   matches
-                    ? { x: 200, y: 0, opacity: 0.5 }
-                    : { y: 200, x: 0, opacity: 0.5 }
+                    ? { x: 300, y: 0, opacity: 0.5 }
+                    : { y: 300, x: 0, opacity: 0.5 }
                 }
                 animate={
                   matches
@@ -322,8 +322,8 @@ const Academics = () => {
               <motion.div
                 initial={
                   matches
-                    ? { x: -200, y: 0, opacity: 0.5 }
-                    : { y: -200, x: 0, opacity: 0.5 }
+                    ? { x: -300, y: 0, opacity: 0.5 }
+                    : { y: -300, x: 0, opacity: 0.5 }
                 }
                 animate={
                   matches
@@ -343,8 +343,8 @@ const Academics = () => {
               <motion.div
                 initial={
                   matches
-                    ? { x: 200, y: 0, opacity: 0.5 }
-                    : { y: 200, x: 0, opacity: 0.5 }
+                    ? { x: 300, y: 0, opacity: 0.5 }
+                    : { y: 300, x: 0, opacity: 0.5 }
                 }
                 animate={
                   matches
