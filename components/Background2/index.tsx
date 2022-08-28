@@ -15,7 +15,7 @@ const Background2 = () => {
       xmlns="http://www.w3.org/2000/svg"
       version="1.1"
     >
-      <rect x="0" y="0" width="100%" height="100%" fill="#001220"></rect>
+      <rect x="0" y="0" width={width} height={height} fill="#001220"></rect>
       <defs>
         <linearGradient id="grad1_0" x1="43.8%" y1="0%" x2="100%" y2="100%">
           <stop
