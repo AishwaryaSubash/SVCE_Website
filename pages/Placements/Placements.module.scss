@@ -123,4 +123,18 @@
   .sideBar {
     width: 240px;
   }
+  .textContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .stats {
+    // height: 97vh;
+    gap: 5px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: repeat(9, 1fr);
+    font-size: 18px;
+  }
 }
