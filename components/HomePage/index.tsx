@@ -1,12 +1,11 @@
 import React from "react";
 import Image from "next/image";
-
 import styles from "./HomePage.module.scss";
 import Button from "@mui/material/Button";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-
+import { createTheme, ThemeProvider } from "@mui/material";
 import { animate, motion } from "framer-motion";
 import WhySvce from "../WhySvce";
+import Placements from "../../pages/Placements";
 import { Grid } from "@mui/material";
 
 const theme = createTheme({
@@ -55,8 +54,7 @@ const HomePage = () => {
         <div className={styles.whySvce}>Why SVCE?</div>
         {/* <div className={styles.cards}>
           <div className={styles.summa}>
-
-          <WhySvce delay={0.3} />
+            <WhySvce delay={0.3} />
           </div>
           <WhySvce delay={0.6} />
           <WhySvce delay={0.9} />
