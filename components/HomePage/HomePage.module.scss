@@ -7,6 +7,7 @@
 }
 .gridC {
   padding: 50px;
+  flex: 5;
 }
 .header {
   height: 50px;
@@ -49,7 +50,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
 }
 .whySvce {
   width: 25%;
@@ -61,6 +61,7 @@
   font-size: 65px;
   text-shadow: 4px 4px darkgray;
   padding-left: 2%;
+  flex: 2;
 }
 
 @media screen and (max-width: 900px) {
