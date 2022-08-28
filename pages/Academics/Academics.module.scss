@@ -2,6 +2,9 @@
   display: flex;
   font-family: "Nunito", sans-serif !important;
 }
+.desktop {
+  position: relative;
+}
 .bg {
   position: fixed;
   overflow: hidden;
@@ -10,8 +13,10 @@
   z-index: -100;
   background-size: cover;
 }
-.desktop {
-  position: relative;
+.header {
+  padding: 15px;
+  display: flex;
+  align-items: flex-start;
 }
 .sideBar {
   position: fixed;
@@ -98,7 +103,7 @@
     grid-template-columns: none;
     overflow: hidden;
   }
-  .sideBar{
+  .sideBar {
     width: 240px;
   }
 }
