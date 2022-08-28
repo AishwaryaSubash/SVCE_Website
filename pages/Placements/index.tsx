@@ -66,44 +66,50 @@ const Placements = ({ select }: { select: number }) => {
               </div>
             </div>
           </div>
-          <div className={styles.stats}>
-            {s.map((s, i) => {
-              return (
-                <div
-                  key={i}
-                  className={cn({
-                    [styles.stats1]: s.id === 1,
-                    [styles.stats2]: s.id === 2,
-                    [styles.stats3]: s.id === 3,
-                    [styles.stats4]: s.id === 4,
-                    [styles.stats5]: s.id === 5,
-                    [styles.stats6]: s.id === 6,
-                    [styles.stats7]: s.id === 7,
-                    [styles.stats8]: s.id === 8,
-                    [styles.stats9]: s.id === 9,
-                  })}
-                >
-                  <div className={styles.statList}> {s.name}</div>
-                  <div>
-                    <CountUp
-                      start={0}
-                      end={s.count}
-                      delay={3}
-                      decimals={s.id == 7 ? 2 : 0}
-                      suffix={s.id == 7 ? "%" : ""}
-                      onStart={() => console.log("hi")}
-                      redraw={true}
-                    >
-                      {({ countUpRef }) => (
-                        <div>
-                          <span ref={countUpRef} />
-                        </div>
-                      )}
-                    </CountUp>
+          <div className={styles.statscontainer}>
+            <div className={styles.stathead}>Statistics</div>
+
+            <div className={styles.stats}>
+              {s.map((s, i) => {
+                return (
+                  <div
+                    key={i}
+                    className={cn({
+                      [styles.stats1]: s.id === 1,
+                      [styles.stats2]: s.id === 2,
+                      [styles.stats3]: s.id === 3,
+                      [styles.stats4]: s.id === 4,
+                      [styles.stats5]: s.id === 5,
+                      [styles.stats6]: s.id === 6,
+                      [styles.stats7]: s.id === 7,
+                      [styles.stats8]: s.id === 8,
+                      [styles.stats9]: s.id === 9,
+                    })}
+                  >
+                    <div>
+                      {s.name}
+                      <div>
+                        <CountUp
+                          start={0}
+                          end={s.count}
+                          delay={3}
+                          decimals={s.id == 7 ? 2 : 0}
+                          suffix={s.id == 7 ? "%" : ""}
+                          onStart={() => console.log("hi")}
+                          redraw={true}
+                        >
+                          {({ countUpRef }) => (
+                            <div>
+                              <span ref={countUpRef} />
+                            </div>
+                          )}
+                        </CountUp>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

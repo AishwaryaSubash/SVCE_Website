@@ -21,7 +21,6 @@
   overflow: hidden;
   padding: 5px 20px 5px 20px;
   flex-direction: row;
-  flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
 }
@@ -34,7 +33,8 @@
   border-radius: 10px;
   padding: 20px;
   margin: 8px;
-  height: 400px;
+  height: 90vh;
+  overflow-y: scroll;
 }
 .heading {
   font-size: 30px;
@@ -43,20 +43,26 @@
 .text {
   font-size: 23px;
 }
-.stats {
+.statscontainer {
   flex: 4;
   height: 97vh;
-  gap: 5px;
+}
+.stathead {
+  font-size: 50px;
+  padding: 5px;
+}
+
+.stats {
+  gap: 10px;
+  height: 87vh;
+
   display: grid;
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
   font-size: 30px;
 }
-
 .stats1 {
   border-radius: 10px;
-
   height: 100%;
   grid-column: 1 /3;
   background-color: #90afc5;
@@ -66,6 +72,12 @@
 
   height: 100%;
   background-color: #336b87;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  div {
+    text-align: left;
+  }
 }
 .stats3 {
   height: 100%;
@@ -73,12 +85,24 @@
 
   grid-row: span 2;
   background-color: #75b1a9;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  div {
+    text-align: right;
+  }
 }
 .stats4 {
   height: 100%;
   border-radius: 10px;
 
   background-color: #a1d6e2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  div {
+    text-align: left;
+  }
 }
 .stats5 {
   height: 100%;
@@ -86,6 +110,12 @@
 
   grid-column: 2 / span 2;
   background-color: #2c7873;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  div {
+    text-align: right;
+  }
 }
 
 .stats6 {
@@ -94,6 +124,12 @@
 
   grid-row: 3 / span 3;
   background-color: #1995ad;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  div {
+    text-align: left;
+  }
 }
 .stats7 {
   height: 100%;
@@ -101,7 +137,6 @@
 
   grid-column: 2 / span 3;
   background-color: #7e675e;
-  // a4cabc
 }
 .stats8 {
   height: 100%;
@@ -110,15 +145,20 @@
   grid-column: 3 / span 2;
   grid-row: 3 / span 2;
   background-color: #dda288;
-  //   DDBC95;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  div {
+    text-align: right;
+  }
 }
 .stats9 {
   height: 100%;
   border-radius: 10px;
+
   grid-row: 3 / span 2;
   background-color: #acbd78;
 }
-
 .people {
   font-size: 20px;
 }
@@ -129,10 +169,11 @@
   }
   .mainContainer {
     flex-direction: column;
+    overflow-y: scroll;
   }
   .textContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
   }
   .stats {
@@ -158,8 +199,5 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-  .statlist {
-    font-size: 30px;
   }
 }
