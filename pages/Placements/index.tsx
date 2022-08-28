@@ -1,6 +1,6 @@
 import React from "react";
 import SideBar from "../../components/SideBar";
-import { Statistics as s } from "./Placement";
+import { Statistics as s } from "../../Placement";
 import CountUp from "react-countup";
 import styles from "./Placements.module.scss";
 import cn from "classnames";
