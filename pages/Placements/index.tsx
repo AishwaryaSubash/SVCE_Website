@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SideBar from "../../components/SideBar";
 import { Statistics as s } from "../../Placement";
 import CountUp from "react-countup";
@@ -6,9 +6,12 @@ import styles from "./Placements.module.scss";
 import cn from "classnames";
 import Head from "next/head";
 import { useMediaQuery } from "@mui/material";
+import { motion } from "framer-motion";
 
 const Placements = ({ select }: { select: number }) => {
   const showSideBar = useMediaQuery("(max-width:600px)");
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -24,6 +27,16 @@ const Placements = ({ select }: { select: number }) => {
         <div className={styles.mainContainer}>
           <div className={styles.textContainer}>
             <div className={styles.content}>
+              {/* <motion.div
+                layout
+                data-isOpen={isOpen}
+                initial={{ borderRadius: 25 }}
+                className={styles.parent}
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                <motion.div layout className={styles.child} />
+              </motion.div>
+              <motion.div> */}
               <div className={styles.heading}>Placement Cell in SVCE</div>
               <div className={styles.text}>
                 The Placement cell is one of the important department in SVCE.
@@ -38,6 +51,7 @@ const Placements = ({ select }: { select: number }) => {
                 are more common and our skilled placement panel are helping
                 students to get placed in top companies.
               </div>
+              {/* </motion.div> */}
               <div className={styles.heading}>Training</div>
               <div className={styles.text}>
                 Placement training plays a major role in shaping up the career
@@ -48,10 +62,13 @@ const Placements = ({ select }: { select: number }) => {
                 enhance their employability skills and achieve good placement in
                 various Industries.
               </div>
+              <div className={styles.heading}>
+                Office of Training and Placement
+              </div>
               <div className={styles.people}>
                 <div className={styles.p1}>
                   <div className={styles.t1}>Chief Placement Officer</div>
-                  Prof. S. Muraleedharan, MS, MBA ()
+                  Prof. S. Muraleedharan, MS, MBA
                 </div>
                 <div className={styles.p2}>
                   <div className={styles.t2}>Assistant Placement Officer</div>
@@ -74,7 +91,10 @@ const Placements = ({ select }: { select: number }) => {
             <div className={styles.stats}>
               {s.map((s, i) => {
                 return (
-                  <div
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.01, duration: 1 }}
                     key={i}
                     className={cn({
                       [styles.stats1]: s.id === 1,
@@ -88,7 +108,30 @@ const Placements = ({ select }: { select: number }) => {
                       [styles.stats9]: s.id === 9,
                     })}
                   >
-                    <div
+                    <motion.div
+                      initial={
+                        s.id === 1
+                          ? { opacity: 0, y: -80 }
+                          : s.id === 2
+                          ? { opacity: 0, x: -60 }
+                          : s.id === 3
+                          ? { opacity: 0, x: 80 }
+                          : s.id === 4
+                          ? { opacity: 0, x: -80 }
+                          : s.id === 5
+                          ? { opacity: 0, x: 80 }
+                          : s.id === 6
+                          ? { opacity: 0, y: -90 }
+                          : s.id === 7
+                          ? { opacity: 0, x: -120 }
+                          : s.id === 8
+                          ? { opacity: 0, x: 80 }
+                          : s.id === 9
+                          ? { opacity: 0, y: 80 }
+                          : { opacity: 0 }
+                      }
+                      animate={{ opacity: 1, x: 0, y: 0 }}
+                      transition={{ delay: 0.01, duration: 3 }}
                       className={cn({
                         [styles.s1]: s.id === 1,
                         [styles.s2]: s.id === 2,
@@ -118,8 +161,8 @@ const Placements = ({ select }: { select: number }) => {
                           </div>
                         )}
                       </CountUp>
-                    </div>
-                  </div>
+                    </motion.div>
+                  </motion.div>
                 );
               })}
             </div>
