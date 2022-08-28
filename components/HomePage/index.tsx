@@ -89,7 +89,7 @@ const HomePage = () => {
                   picture={"/images/certified-icon.svg"}
                   text={"Accredited by NAAC and NBA"}
                   bgColor={"#A1BE95"}
-                  fontSize={!fontSelect ? 35 : 20}
+                  fontSize={!fontSelect ? 25 : 20}
                   fontWeight={!fontSelect ? 900 : 600}
                   x={-100}
                   y={0}
@@ -105,7 +105,7 @@ const HomePage = () => {
                     "Highest placement offers of Rs.25 LPA and 20 LPA in Amazon"
                   }
                   bgColor={"#E2DFA2"}
-                  fontSize={!fontSelect ? 35 : 20}
+                  fontSize={!fontSelect ? 25 : 20}
                   fontWeight={!fontSelect ? 900 : 600}
                   x={-100}
                   y={0}
@@ -123,7 +123,7 @@ const HomePage = () => {
                     "One of the top ranked engineering Insitutes affiliated to Anna University"
                   }
                   bgColor={"#92AAC7"}
-                  fontSize={!fontSelect ? 50 : 20}
+                  fontSize={!fontSelect ? 40 : 20}
                   fontWeight={!fontSelect ? 900 : 600}
                   x={0}
                   y={-100}
@@ -163,7 +163,7 @@ const HomePage = () => {
                   picture={"/images/world-svgrepo-com.svg"}
                   text={"Over 28% of the alumni work abroad"}
                   bgColor={"#98DBC6"}
-                  fontSize={!fontSelect ? 50 : 20}
+                  fontSize={!fontSelect ? 40 : 20}
                   fontWeight={!fontSelect ? 900 : 600}
                   x={0}
                   y={100}
@@ -186,7 +186,7 @@ const HomePage = () => {
                       "World class Laboratories to foster innovation and research"
                     }
                     bgColor={"#F18D9E"}
-                    fontSize={!fontSelect ? 35 : 20}
+                    fontSize={!fontSelect ? 25 : 20}
                     fontWeight={!fontSelect ? 900 : 600}
                     x={100}
                     y={0}
@@ -202,7 +202,7 @@ const HomePage = () => {
                       "Alumni working in fortune 500 companies like Google, Microsoft, Facebook, Mercedes Benz, etc"
                     }
                     bgColor={"#D9B44A"}
-                    fontSize={!fontSelect ? 35 : 20}
+                    fontSize={!fontSelect ? 25 : 20}
                     fontWeight={!fontSelect ? 900 : 600}
                     x={100}
                     y={0}
