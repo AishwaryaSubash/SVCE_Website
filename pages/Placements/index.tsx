@@ -55,7 +55,6 @@ const Placements = ({ select }: { select: number }) => {
               return (
                 <div
                   key={i}
-                  
                   className={cn({
                     [styles.stats1]: s.id === 1,
                     [styles.stats2]: s.id === 2,
@@ -70,7 +69,14 @@ const Placements = ({ select }: { select: number }) => {
                 >
                   <div className={styles.statList}> {s.name}</div>
                   <div>
-                    <CountUp start={0} end={s.count} delay={2}>
+                    <CountUp
+                      start={0}
+                      end={s.count}
+                      duration={2}
+                      decimals={s.id == 7 ? 2 : 0}
+                      suffix={s.id == 7 ? "%" : ""}
+                      onStart={() => console.log("hi")}
+                    >
                       {({ countUpRef }) => (
                         <div>
                           <span ref={countUpRef} />
