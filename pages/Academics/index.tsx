@@ -26,7 +26,7 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import FloatingBackButton from "../../components/FloatingBackButton";
 
-const Background = dynamic(() => import("../../components/Background"), {
+const Background = dynamic(() => import("../../components/Background2"), {
   ssr: false,
 });
 const Academics = () => {
