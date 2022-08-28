@@ -6,7 +6,17 @@
   z-index: 10;
   max-height: 100%;
 }
-.emptyForAReason{
+.bg {
+  position: fixed;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+}
+.desktop {
+  position: relative;
+}
+.emptyForAReason {
   width: 80px;
 }
 .hp {
@@ -16,7 +26,7 @@
   justify-content: center;
 }
 @media screen and (max-width: 600px) {
-  .sideBar{
+  .sideBar {
     width: 240px;
   }
 }
