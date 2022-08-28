@@ -15,35 +15,6 @@ const Background2 = () => {
       xmlns="http://www.w3.org/2000/svg"
       version="1.1"
     >
-      <rect x="0" y="0" width={width} height={height} fill="#001220"></rect>
-      <defs>
-        <linearGradient id="grad1_0" x1="43.8%" y1="0%" x2="100%" y2="100%">
-          <stop
-            offset="14.444444444444446%"
-            stopColor="#001220"
-            stopOpacity="1"
-          ></stop>
-          <stop
-            offset="85.55555555555554%"
-            stopColor="#001220"
-            stopOpacity="1"
-          ></stop>
-        </linearGradient>
-      </defs>
-      <defs>
-        <linearGradient id="grad2_0" x1="0%" y1="0%" x2="56.3%" y2="100%">
-          <stop
-            offset="14.444444444444446%"
-            stopColor="#001220"
-            stopOpacity="1"
-          ></stop>
-          <stop
-            offset="85.55555555555554%"
-            stopColor="#001220"
-            stopOpacity="1"
-          ></stop>
-        </linearGradient>
-      </defs>
       {!showCurve && (
         <g className={styles.g1} transform={`translate(${width}, 0)`}>
           <motion.path
