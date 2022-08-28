@@ -20,6 +20,10 @@
   display: flex;
   overflow: hidden;
   padding: 5px 20px 5px 20px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
 }
 .textContainer {
   display: flex;
@@ -123,16 +127,39 @@
   .sideBar {
     width: 240px;
   }
+  .mainContainer {
+    flex-direction: column;
+  }
   .textContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
-
   .stats {
-    // height: 97vh;
-    gap: 5px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     font-size: 18px;
+  }
+  .stats1,
+  .stats2,
+  .stats3,
+  .stats4,
+  .stats5,
+  .stats6,
+  .stats7,
+  .stats8,
+  .stats9 {
+    border-radius: 10px;
+    height: 100%;
+    width: 90%;
+    padding: 19px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .statlist {
+    font-size: 30px;
   }
 }
