@@ -6,7 +6,8 @@
   justify-content: center;
 }
 .gridC {
-  padding: 20px;
+  padding: 50px;
+  flex: 5;
 }
 .header {
   height: 50px;
@@ -26,7 +27,10 @@
 
 @media screen and (max-width: 600px) {
   .container {
-    width: 90%;
+    width: 95%;
+  }
+  .gridC {
+    padding: 0px;
   }
   .header {
     gap: 10px;
@@ -46,18 +50,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
 }
 .whySvce {
   width: 25%;
   z-index: 2;
-  color: white;
+  color: #2988bc;
   text-align: center;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 65px;
   text-shadow: 4px 4px darkgray;
   padding-left: 2%;
+  flex: 2;
 }
 
 @media screen and (max-width: 900px) {
