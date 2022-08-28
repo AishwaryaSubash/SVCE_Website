@@ -22,8 +22,8 @@ export const Statistics: Stats[] = [
   },
   {
     id: 4,
-    name: "Placements",
-    count: 98.82,
+    name: "Research Centers",
+    count: 10,
   },
   {
     id: 5,
@@ -32,22 +32,22 @@ export const Statistics: Stats[] = [
   },
   {
     id: 6,
+    name: "Patents Granted",
+    count: 16,
+  },
+  {
+    id: 7,
+    name: "Placements",
+    count: 98.82,
+  },
+  {
+    id: 8,
     name: "Funded Projects (Live)",
     count: 22,
   },
   {
-    id: 7,
-    name: "Research Centers",
-    count: 10,
-  },
-  {
-    id: 8,
+    id: 9,
     name: "PhD Received",
     count: 112,
-  },
-  {
-    id: 9,
-    name: "Patents Granted",
-    count: 16,
   },
 ];
