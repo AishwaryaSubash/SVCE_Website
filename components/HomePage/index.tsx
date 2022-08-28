@@ -123,7 +123,7 @@ const HomePage = () => {
                     "One of the top ranked engineering Insitutes affiliated to Anna University"
                   }
                   bgColor={"#92AAC7"}
-                  fontSize={!fontSelect ? 50 : 30}
+                  fontSize={!fontSelect ? 50 : 20}
                   fontWeight={!fontSelect ? 900 : 600}
                   x={0}
                   y={-100}
@@ -163,7 +163,7 @@ const HomePage = () => {
                   picture={"/images/world-svgrepo-com.svg"}
                   text={"Over 28% of the alumni work abroad"}
                   bgColor={"#98DBC6"}
-                  fontSize={!fontSelect ? 50 : 30}
+                  fontSize={!fontSelect ? 50 : 20}
                   fontWeight={!fontSelect ? 900 : 600}
                   x={0}
                   y={100}

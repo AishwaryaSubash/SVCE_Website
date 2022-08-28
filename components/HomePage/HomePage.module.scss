@@ -6,7 +6,7 @@
   justify-content: center;
 }
 .gridC {
-  padding: 20px;
+  padding: 50px;
 }
 .header {
   height: 50px;
@@ -27,6 +27,9 @@
 @media screen and (max-width: 600px) {
   .container {
     width: 90%;
+  }
+  .gridC {
+    padding: 0px;
   }
   .header {
     gap: 10px;
@@ -51,7 +54,7 @@
 .whySvce {
   width: 25%;
   z-index: 2;
-  color: white;
+  color: #2988bc;
   text-align: center;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
