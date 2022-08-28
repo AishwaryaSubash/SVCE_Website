@@ -82,7 +82,7 @@ const Placements = ({ select }: { select: number }) => {
                     <CountUp
                       start={5}
                       end={s.count}
-                      duration={3}
+                      delay={3}
                       decimals={s.id == 7 ? 2 : 0}
                       suffix={s.id == 7 ? "%" : ""}
                       onStart={() => console.log("hi")}
