@@ -241,20 +241,59 @@
   .stats {
     font-size: 18px;
   }
-  .s1,
-  .s2,
-  .s3,
-  .s4,
-  .s5,
-  .s6,
-  .s7,
-  .s8,
-  .s9 {
-    border-radius: 5px;
-
-    height: 100%;
-    width: 90%;
-    padding: 9px;
+  .stats1 {
+    .s1 {
+      padding: 5px;
+      font-size: 16px;
+    }
+  }
+  .stats2 {
+    .s2 {
+      padding: 5px;
+      font-size: 16px;
+    }
+  }
+  .stats3 {
+    .s3 {
+      padding: 5px;
+      font-size: 17px;
+    }
+  }
+  .stats4 {
+    .s4 {
+      padding: 5px;
+      font-size: 16px;
+    }
+  }
+  .stats5 {
+    .s5 {
+      padding: 5px;
+      font-size: 20px;
+    }
+  }
+  .stats6 {
+    .s6 {
+      padding: 5px;
+      font-size: 17px;
+    }
+  }
+  .stats7 {
+    .s7 {
+      padding: 5px;
+      font-size: 16px;
+    }
+  }
+  .stats8 {
+    .s8 {
+      padding: 5px;
+      font-size: 19px;
+    }
+  }
+  .stats9 {
+    .s9 {
+      padding: 5px;
+      font-size: 11px;
+    }
   }
 
   .people {
