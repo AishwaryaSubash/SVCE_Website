@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: text;
 }
 .container {
   display: flex;
@@ -13,7 +14,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   margin: 10px;
-
+  margin-top: 30px;
   font-family: "Nunito", sans-serif !important;
 }
 .name {
@@ -29,6 +30,7 @@
   align-items: center;
   justify-content: center;
   text-align: justify;
+  line-height: 25px;
   text-justify: inter-word;
 }
 .missionVision {
@@ -39,9 +41,11 @@
 }
 .visionContent {
   padding-top: 3%;
+  line-height: 25px;
 }
 .missionContent {
   padding-top: 2%;
+  line-height: 25px;
 }
 .mission {
   margin: 0;

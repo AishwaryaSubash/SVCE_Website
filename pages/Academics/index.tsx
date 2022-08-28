@@ -20,7 +20,7 @@ import { BiBuildingHouse } from "react-icons/bi";
 import { MdEngineering } from "react-icons/md";
 import { TbMathSymbols } from "react-icons/tb";
 import { DiAtom } from "react-icons/di";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Academics = () => {
@@ -29,7 +29,7 @@ const Academics = () => {
   const matches = useMediaQuery("(max-width:700px)");
   const showSideBar = useMediaQuery("(max-width:600px)");
   const selectDepartment = (id: number) => {
-    setDept(id);
+    setDept(id - 1);
   };
   useEffect(() => {
     if (dept !== -1) {
@@ -65,7 +65,7 @@ const Academics = () => {
               }
               whileHover={{ scale: 1.1 }}
               transition={{ delay: 0.1 }}
-              onClick={() => selectDepartment(0)}
+              onClick={() => selectDepartment(1)}
             >
               <div className={styles.icon}>
                 <IoIosFlask />
@@ -86,7 +86,7 @@ const Academics = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ delay: 0.2 }}
               className={styles.dept}
-              onClick={() => selectDepartment(1)}
+              onClick={() => selectDepartment(2)}
             >
               <div className={styles.icon}>
                 <TbMathSymbols />
@@ -107,7 +107,7 @@ const Academics = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ delay: 0.3 }}
               className={styles.dept}
-              onClick={() => selectDepartment(2)}
+              onClick={() => selectDepartment(3)}
             >
               <div className={styles.icon}>
                 <DiAtom />
@@ -128,7 +128,7 @@ const Academics = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ delay: 0.4 }}
               className={styles.dept}
-              onClick={() => selectDepartment(3)}
+              onClick={() => selectDepartment(4)}
             >
               <div className={styles.icon}>
                 <FcAutomotive />
@@ -149,7 +149,7 @@ const Academics = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ delay: 0.5 }}
               className={styles.dept}
-              onClick={() => selectDepartment(4)}
+              onClick={() => selectDepartment(5)}
             >
               <div className={styles.icon}>
                 <GiMicroscope />
@@ -170,7 +170,7 @@ const Academics = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ delay: 0.6 }}
               className={styles.dept}
-              onClick={() => selectDepartment(5)}
+              onClick={() => selectDepartment(6)}
             >
               <div className={styles.icon}>
                 <GiChemicalDrop />
@@ -191,7 +191,7 @@ const Academics = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ delay: 0.7 }}
               className={styles.dept}
-              onClick={() => selectDepartment(6)}
+              onClick={() => selectDepartment(7)}
             >
               <div className={styles.icon}>
                 <BiBuildingHouse />
@@ -212,7 +212,7 @@ const Academics = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ delay: 0.8 }}
               className={styles.dept}
-              onClick={() => selectDepartment(7)}
+              onClick={() => selectDepartment(8)}
             >
               <div className={styles.icon}>
                 <RiComputerLine />
@@ -233,7 +233,7 @@ const Academics = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ delay: 1 }}
               className={styles.dept}
-              onClick={() => selectDepartment(8)}
+              onClick={() => selectDepartment(9)}
             >
               <div className={styles.icon}>
                 <FcElectronics />
@@ -256,7 +256,7 @@ const Academics = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ delay: 1.1 }}
               className={styles.dept}
-              onClick={() => selectDepartment(9)}
+              onClick={() => selectDepartment(10)}
             >
               <div className={styles.icon}>
                 <GiElectric />
@@ -279,7 +279,7 @@ const Academics = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ delay: 1.2 }}
               className={styles.dept}
-              onClick={() => selectDepartment(10)}
+              onClick={() => selectDepartment(11)}
             >
               <div className={styles.icon}>
                 <GiBookmark />
@@ -302,7 +302,7 @@ const Academics = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ delay: 1.3 }}
               className={styles.dept}
-              onClick={() => selectDepartment(11)}
+              onClick={() => selectDepartment(12)}
             >
               <div className={styles.icon}>
                 <GrCloudComputer />
@@ -323,7 +323,7 @@ const Academics = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ delay: 1.4 }}
               className={styles.dept}
-              onClick={() => selectDepartment(12)}
+              onClick={() => selectDepartment(13)}
             >
               <div className={styles.icon}>
                 <MdEngineering />
@@ -344,7 +344,7 @@ const Academics = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ delay: 1.5 }}
               className={styles.dept}
-              onClick={() => selectDepartment(13)}
+              onClick={() => selectDepartment(14)}
             >
               <div className={styles.icon}>
                 <FaShip />
@@ -354,7 +354,14 @@ const Academics = () => {
           </div>
         </div>
         <div ref={scroll}></div>
-        <div>{dept != -1 ? <Department select={dept} /> : null} </div>
+        <motion.div
+          drag
+          dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
+          dragElastic={0.05}
+          className={styles.deptComponent}
+        >
+          {dept !== -1 && <Department select={dept} />}
+        </motion.div>
       </div>
     </div>
   );
