@@ -40,23 +40,23 @@ const Placements = ({ select }: { select: number }) => {
                 enhance their employability skills and achieve good placement in
                 various Industries.
               </div>
-            </div>
-            <div className={styles.people}>
-              <div className={styles.p1}>
-                <div className={styles.t1}>Chief Placement Officer</div>
-                Prof. S. Muraleedharan, MS, MBA ()
-              </div>
-              <div className={styles.p2}>
-                <div className={styles.t2}>Assistant Placement Officer</div>
-                Mr. E. Ramachandiran, M.Tech.
-              </div>
-              <div className={styles.p3}>
-                <div className={styles.t3}>Assistant Placement Officer</div>
-                Mr. A. K. Boobalasenthilraj, M.E. (Ph.D.,)
-              </div>
-              <div className={styles.p4}>
-                <div className={styles.t4}>Junior Assistant</div>
-                Mr. D. Pugazharasu, M.A., MCA.
+              <div className={styles.people}>
+                <div className={styles.p1}>
+                  <div className={styles.t1}>Chief Placement Officer</div>
+                  Prof. S. Muraleedharan, MS, MBA ()
+                </div>
+                <div className={styles.p2}>
+                  <div className={styles.t2}>Assistant Placement Officer</div>
+                  Mr. E. Ramachandiran, M.Tech.
+                </div>
+                <div className={styles.p3}>
+                  <div className={styles.t3}>Assistant Placement Officer</div>
+                  Mr. A. K. Boobalasenthilraj, M.E. (Ph.D.,)
+                </div>
+                <div className={styles.p4}>
+                  <div className={styles.t4}>Junior Assistant</div>
+                  Mr. D. Pugazharasu, M.A., MCA.
+                </div>
               </div>
             </div>
           </div>
@@ -80,9 +80,9 @@ const Placements = ({ select }: { select: number }) => {
                   <div className={styles.statList}> {s.name}</div>
                   <div>
                     <CountUp
-                      start={0}
+                      start={5}
                       end={s.count}
-                      duration={2}
+                      duration={3}
                       decimals={s.id == 7 ? 2 : 0}
                       suffix={s.id == 7 ? "%" : ""}
                       onStart={() => console.log("hi")}

@@ -114,11 +114,9 @@
   grid-row: 3 / span 2;
   background-color: #acbd78;
 }
-.statlist:nth-child(n) {
-}
-.counter {
-  font-size: 30px;
-  /*margin: 5px 550px 5px 550px;*/
+
+.people {
+  font-size: 20px;
 }
 
 @media screen and (max-width: 600px) {
