@@ -121,7 +121,7 @@ const Placements = ({ select }: { select: number }) => {
                           : s.id === 5
                           ? { opacity: 0, x: 80 }
                           : s.id === 6
-                          ? { opacity: 0, y: -90 }
+                          ? { opacity: 0, y: 90 }
                           : s.id === 7
                           ? { opacity: 0, x: -120 }
                           : s.id === 8

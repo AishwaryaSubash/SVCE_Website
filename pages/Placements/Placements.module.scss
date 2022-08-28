@@ -212,6 +212,7 @@
   .sideBar {
     width: 240px;
   }
+  /*
   .mainContainer {
     padding: 5px;
     flex-direction: column;
@@ -265,8 +266,10 @@
     flex-direction: column;
     justify-content: space-between;
   }
+  */
 }
 
+//SCROLLBAR
 .content::-webkit-scrollbar {
   height: 5px;
   width: 5px;
