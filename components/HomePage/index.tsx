@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+
 import styles from "./HomePage.module.scss";
 import Button from "@mui/material/Button";
-import { createTheme, ThemeProvider } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
 import { animate, motion } from "framer-motion";
 import WhySvce from "../WhySvce";
-import Placements from "../../pages/Placements";
 import { Grid } from "@mui/material";
 
 const theme = createTheme({
@@ -54,7 +55,8 @@ const HomePage = () => {
         <div className={styles.whySvce}>Why SVCE?</div>
         {/* <div className={styles.cards}>
           <div className={styles.summa}>
-            <WhySvce delay={0.3} />
+
+          <WhySvce delay={0.3} />
           </div>
           <WhySvce delay={0.6} />
           <WhySvce delay={0.9} />
@@ -64,36 +66,140 @@ const HomePage = () => {
           <WhySvce delay={2.1} />
           <WhySvce delay={2.4} />
         </div> */}
-        <div className={styles.summa}>
-          <Grid container item={true} spacing={2} xs={12} className={styles.mainGrid}>
-            <Grid container item={true} xs={6}>
-              <Grid item={true} xs={12}>
-                <WhySvce delay={0.3} height={`100%`} />
+        <div className={styles.gridC}>
+          <Grid
+            container
+            item={true}
+            spacing={2}
+            xs={12}
+            className={styles.mainGrid}
+          >
+            <Grid
+              container
+              item={true}
+              xs={6}
+              rowSpacing={2}
+              className={styles.childGrid}
+            >
+              <Grid item={true} xs={12} className={styles.childGrid}>
+                <WhySvce
+                  delay={0.3}
+                  height={`100%`}
+                  picture={"/images/certified-icon.svg"}
+                  text={"Accredited by NAAC and NBA"}
+                  bgColor={"#A1BE95"}
+                  fontSize={35}
+                  x={-100}
+                  y={0}
+                  duration={1}
+                />
               </Grid>
-              <Grid item={true} xs={12}>
-                <WhySvce delay={0.6} height={`100%`} />
+              <Grid item={true} xs={12} className={styles.childGrid}>
+                <WhySvce
+                  delay={0.6}
+                  height={`100%`}
+                  picture={"/images/amazon.svg"}
+                  text={
+                    "Highest placement offers of Rs.25 LPA and 20 LPA in Amazon"
+                  }
+                  bgColor={"#E2DFA2"}
+                  fontSize={35}
+                  x={-100}
+                  y={0}
+                  duration={1}
+                />
               </Grid>
             </Grid>
-            <Grid container item={true} xs={6}>
+            <Grid container item={true} xs={6} className={styles.childGrid}>
               <Grid item={true} xs={12}>
-                <WhySvce delay={0.9} height={`100%`} />
+                <WhySvce
+                  delay={0.9}
+                  height={`100%`}
+                  picture={"/images/badge.svg"}
+                  text={
+                    "One of the top ranked engineering Insitutes affiliated to Anna University"
+                  }
+                  bgColor={"#92AAC7"}
+                  fontSize={50}
+                  x={0}
+                  y={-100}
+                  duration={1}
+                />
               </Grid>
             </Grid>
-            <Grid container item={true} xs={12}>
+            <Grid container item={true} xs={12} className={styles.childGrid}>
               <Grid item={true} xs={12}>
-                <WhySvce delay={0.9} height={`100%`} />
+                <WhySvce
+                  delay={0.9}
+                  height={`100%`}
+                  picture={"/images/exmployee.svg"}
+                  text={
+                    "High qualified faculty and staff with an average experience of over 20 years"
+                  }
+                  bgColor={" #5BC8AC"}
+                  fontSize={35}
+                  x={0}
+                  y={0}
+                  duration={1}
+                />
               </Grid>
             </Grid>
-            <Grid container item={true} xs={12}>
-              <Grid item={true} xs={6}>
-                <WhySvce delay={0.9} height={`100%`} />
+            <Grid
+              container
+              item={true}
+              xs={12}
+              spacing={2}
+              className={styles.childGrid}
+            >
+              <Grid item={true} xs={6} className={styles.childGrid}>
+                <WhySvce
+                  delay={0.3}
+                  height={`100%`}
+                  picture={"/images/world-svgrepo-com.svg"}
+                  text={"Over 28% of the alumni work abroad"}
+                  bgColor={"#98DBC6"}
+                  fontSize={50}
+                  x={0}
+                  y={100}
+                  duration={1}
+                />
               </Grid>
-              <Grid container item={true} xs={6}>
+              <Grid
+                container
+                item={true}
+                xs={6}
+                rowSpacing={2}
+                className={styles.childGrid}
+              >
                 <Grid item={true} xs={12}>
-                  <WhySvce delay={0.3} height={`100%`} />
+                  <WhySvce
+                    delay={0.3}
+                    height={`100%`}
+                    picture={"/images/flask.svg"}
+                    text={
+                      "World class Laboratories to foster innovation and research"
+                    }
+                    bgColor={"#F18D9E"}
+                    fontSize={35}
+                    x={100}
+                    y={0}
+                    duration={1}
+                  />
                 </Grid>
-                <Grid item={true} xs={12}>
-                  <WhySvce delay={0.6} height={`100%`} />
+                <Grid item={true} xs={12} className={styles.childGrid}>
+                  <WhySvce
+                    delay={0.3}
+                    height={`100%`}
+                    picture={"/images/org.svg"}
+                    text={
+                      "Alumni working in fortune 500 companies like Google, Microsoft, Facebook, Mercedes Benz, etc"
+                    }
+                    bgColor={"#D9B44A"}
+                    fontSize={35}
+                    x={100}
+                    y={0}
+                    duration={1}
+                  />
                 </Grid>
               </Grid>
             </Grid>

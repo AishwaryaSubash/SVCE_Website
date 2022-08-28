@@ -1,11 +1,12 @@
 .container {
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  justify-content: center;
 }
-.mainGrid {
-  margin: 5px;
+.gridC {
+  padding: 20px;
 }
 .header {
   height: 50px;
@@ -13,6 +14,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px;
+}
+.childGrid {
+  padding: 0;
 }
 .muiBtn,
 .btn {
@@ -41,17 +46,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 50px;
 }
 .whySvce {
   width: 25%;
   z-index: 2;
-
+  color: white;
   text-align: center;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 65px;
   text-shadow: 4px 4px darkgray;
+  padding-left: 2%;
 }
 
 @media screen and (max-width: 900px) {
@@ -62,10 +68,7 @@
     flex-direction: column;
   }
   .whySvce {
-    padding-top: 20px;
+    padding-top: 35px;
     width: auto;
   }
-}
-.summa {
-  padding-top: 20px;
 }
