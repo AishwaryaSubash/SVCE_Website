@@ -30,8 +30,18 @@ const Placements = ({ select }: { select: number }) => {
                 are more common and our skilled placement panel are helping
                 students to get placed in top companies.
               </div>
+              <div className={styles.heading}>Training</div>
+              <div className={styles.text}>
+                Placement training plays a major role in shaping up the career
+                goals of students. It is the dream of every engineering student
+                to get placed in a top organization visiting their campus for
+                recruitment. Keeping this key aspect into consideration, it is
+                realized that training is important for engineering students to
+                enhance their employability skills and achieve good placement in
+                various Industries.
+              </div>
             </div>
-            <div>
+            <div className={styles.people}>
               <div className={styles.p1}>
                 <div className={styles.t1}>Chief Placement Officer</div>
                 Prof. S. Muraleedharan, MS, MBA ()
@@ -76,6 +86,7 @@ const Placements = ({ select }: { select: number }) => {
                       decimals={s.id == 7 ? 2 : 0}
                       suffix={s.id == 7 ? "%" : ""}
                       onStart={() => console.log("hi")}
+                      redraw={true}
                     >
                       {({ countUpRef }) => (
                         <div>
