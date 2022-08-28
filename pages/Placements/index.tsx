@@ -94,6 +94,7 @@ const Placements = ({ select }: { select: number }) => {
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
+                    whileHover={{ scale: 1.1 }}
                     transition={{ delay: 0.01, duration: 1 }}
                     key={i}
                     className={cn({
