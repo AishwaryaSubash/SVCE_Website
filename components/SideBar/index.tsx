@@ -183,7 +183,12 @@ const SideBar = () => {
                 [styles.clickedTextWrapper]: clicked,
               })}
             >
-              <SiBookstack />
+              <Link href="/Placements">
+                <div>
+                  <SiBookstack />
+                </div>
+              </Link>
+
               {clicked && (
                 <motion.div
                   initial={{ x: 300, opacity: 0 }}
@@ -191,7 +196,7 @@ const SideBar = () => {
                   className={styles.clickedText}
                   transition={{ delay: 0.25 }}
                 >
-                  Placements
+                  <Link href="/Placements">Placements</Link>
                 </motion.div>
               )}
             </div>
