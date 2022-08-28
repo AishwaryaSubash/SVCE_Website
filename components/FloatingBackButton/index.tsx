@@ -1,7 +1,8 @@
 import { createTheme, Fab, ThemeProvider } from "@mui/material";
 import React from "react";
 import styles from "./FloatingBackButton.module.scss";
-import { DiAtom } from "react-icons/di";
+import { IoHome } from "react-icons/io5";
+import Link from "next/link";
 const theme = createTheme({
   palette: {
     primary: {
@@ -11,14 +12,16 @@ const theme = createTheme({
 });
 const FloatingBackButton = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.button}>
-        <ThemeProvider theme={theme}>
+    <div className={styles.button}>
+      <ThemeProvider theme={theme}>
+        <Link href="/">
           <Fab color="primary" aria-label="add">
-            <DiAtom />
+            <div className={styles.icon}>
+              <IoHome />
+            </div>
           </Fab>
-        </ThemeProvider>
-      </div>
+        </Link>
+      </ThemeProvider>
     </div>
   );
 };

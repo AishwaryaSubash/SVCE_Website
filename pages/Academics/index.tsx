@@ -24,6 +24,7 @@ import { motion } from "framer-motion";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import FloatingBackButton from "../../components/FloatingBackButton";
 
 const Background = dynamic(() => import("../../components/Background"), {
   ssr: false,
@@ -385,6 +386,9 @@ const Academics = () => {
           >
             {dept !== -1 && <Department select={dept} />}
           </motion.div>
+        </div>
+        <div className={styles.floatingButton}>
+          <FloatingBackButton />
         </div>
       </div>
     </div>
