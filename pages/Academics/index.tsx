@@ -362,7 +362,7 @@ const Academics = () => {
           </div>
           <div ref={scroll}></div>
           <motion.div
-            drag
+            drag={!matches}
             dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
             dragElastic={0.05}
             className={styles.deptComponent}
