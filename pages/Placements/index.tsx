@@ -86,6 +86,7 @@ const Placements = ({ select }: { select: number }) => {
                   <div className={styles.statList}> {s.name}</div>
                   <div>
                     <CountUp
+                      start={0}
                       end={s.count}
                       delay={3}
                       decimals={s.id == 7 ? 2 : 0}
