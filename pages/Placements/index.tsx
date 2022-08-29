@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Bar } from "react-chartjs-2";
 import SideBar from "../../components/SideBar";
 import { Statistics as s } from "../../Placement";
 // import CountUp from "react-countup";
@@ -8,13 +9,40 @@ import Head from "next/head";
 import { useMediaQuery } from "@mui/material";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
+import { Chart, BarElement, CategoryScale, LinearScale } from "chart.js";
+Chart.register(CategoryScale, LinearScale, BarElement);
 const CountUp = dynamic(() => import("react-countup"), {
   ssr: false,
 });
 const Placements = ({ select }: { select: number }) => {
   const showSideBar = useMediaQuery("(max-width:600px)");
   const [isOpen, setIsOpen] = useState(false);
-
+  const data = {
+    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+          "rgba(255, 99, 132, 0.2)",
+          "rgba(54, 162, 235, 0.2)",
+          "rgba(255, 206, 86, 0.2)",
+          "rgba(75, 192, 192, 0.2)",
+          "rgba(153, 102, 255, 0.2)",
+          "rgba(255, 159, 64, 0.2)",
+        ],
+        borderColor: [
+          "rgba(255, 99, 132, 1)",
+          "rgba(54, 162, 235, 1)",
+          "rgba(255, 206, 86, 1)",
+          "rgba(75, 192, 192, 1)",
+          "rgba(153, 102, 255, 1)",
+          "rgba(255, 159, 64, 1)",
+        ],
+        borderWidth: 1,
+      },
+    ],
+  };
   return (
     <div className={styles.container}>
       <Head>
@@ -40,6 +68,14 @@ const Placements = ({ select }: { select: number }) => {
                 <motion.div layout className={styles.child} />
               </motion.div>
               <motion.div> */}
+              <Bar
+                data={data}
+                width={400}
+                height={200}
+                options={{
+                  maintainAspectRatio: false,
+                }}
+              />
               <div className={styles.heading}>Placement Cell in SVCE</div>
               <div className={styles.text}>
                 The Placement cell is one of the important department in SVCE.
