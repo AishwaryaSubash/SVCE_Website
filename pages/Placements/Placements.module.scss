@@ -105,6 +105,7 @@
   }
   .s3 {
     padding: 10px;
+    font-size: 30px;
   }
 }
 .stats4 {
@@ -212,22 +213,17 @@
   .sideBar {
     width: 240px;
   }
-  /*
+
   .mainContainer {
     padding: 5px;
-    flex-direction: column;
     overflow-y: scroll;
-  }
-  .textContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
   }
   .content {
     padding: 10px;
     margin: 2px;
-    height: 100vh;
-    overflow-y: auto;
+    /*height: 100vh;
+    overflow-y: auto;*/
   }
   .heading {
     font-size: 17px;
@@ -237,36 +233,84 @@
     font-size: 12px;
   }
   .statscontainer {
-    height: 100vh;
+    height: 90vh;
   }
   .stathead {
     font-size: 17px;
   }
   .stats {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     font-size: 18px;
   }
-  .stats1,
-  .stats2,
-  .stats3,
-  .stats4,
-  .stats5,
-  .stats6,
-  .stats7,
-  .stats8,
-  .stats9 {
-    border-radius: 10px;
-    height: 100%;
-    width: 90%;
-    padding: 19px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  .stats1 {
+    .s1 {
+      padding: 5px;
+      font-size: 16px;
+    }
   }
-  */
+  .stats2 {
+    .s2 {
+      padding: 5px;
+      font-size: 16px;
+    }
+  }
+  .stats3 {
+    .s3 {
+      padding: 5px;
+      font-size: 17px;
+    }
+  }
+  .stats4 {
+    .s4 {
+      padding: 5px;
+      font-size: 16px;
+    }
+  }
+  .stats5 {
+    .s5 {
+      padding: 5px;
+      font-size: 20px;
+    }
+  }
+  .stats6 {
+    .s6 {
+      padding: 5px;
+      font-size: 17px;
+    }
+  }
+  .stats7 {
+    .s7 {
+      padding: 5px;
+      font-size: 16px;
+    }
+  }
+  .stats8 {
+    .s8 {
+      padding: 5px;
+      font-size: 19px;
+    }
+  }
+  .stats9 {
+    .s9 {
+      padding: 5px;
+      font-size: 11px;
+    }
+  }
+
+  .people {
+    font-size: 11px;
+    .t1,
+    .t2,
+    .t3,
+    .t4 {
+      font-size: 12px;
+    }
+    .p1,
+    .p2,
+    .p3,
+    .p4 {
+      padding: 2px;
+    }
+  }
 }
 
 //SCROLLBAR
