@@ -7,8 +7,12 @@ import cn from "classnames";
 import Head from "next/head";
 import { useMediaQuery } from "@mui/material";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 
 const Placements = ({ select }: { select: number }) => {
+  const CountUp = dynamic(() => import("react-countup"), {
+    ssr: false,
+  });
   const showSideBar = useMediaQuery("(max-width:600px)");
   const [isOpen, setIsOpen] = useState(false);
 
@@ -76,7 +80,7 @@ const Placements = ({ select }: { select: number }) => {
                 </div>
                 <div className={styles.p3}>
                   <div className={styles.t3}>Assistant Placement Officer</div>
-                  Mr. A. K. Boobalasenthilraj, M.E. (Ph.D.,)
+                  Mr. A. K. Boobalasenthilraj, M.E., Ph.D.
                 </div>
                 <div className={styles.p4}>
                   <div className={styles.t4}>Junior Assistant</div>
