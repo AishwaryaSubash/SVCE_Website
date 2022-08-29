@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 import SideBar from "../../components/SideBar";
 import { Statistics as s } from "../../Placement";
-import CountUp from "react-countup";
+// import CountUp from "react-countup";
 import styles from "./Placements.module.scss";
 import cn from "classnames";
 import Head from "next/head";
 import { useMediaQuery } from "@mui/material";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
-
+const CountUp = dynamic(() => import("react-countup"), {
+  ssr: false,
+});
 const Placements = ({ select }: { select: number }) => {
-  const CountUp = dynamic(() => import("react-countup"), {
-    ssr: false,
-  });
   const showSideBar = useMediaQuery("(max-width:600px)");
   const [isOpen, setIsOpen] = useState(false);
 
