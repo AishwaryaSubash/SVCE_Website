@@ -367,3 +367,11 @@
   background: #f107a3;
   border-radius: 50%;
 }
+.floatingButton{
+  position: fixed;
+  text-align: right;
+  float: right;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}

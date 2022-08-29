@@ -10,6 +10,7 @@ import { useMediaQuery } from "@mui/material";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { Chart, BarElement, CategoryScale, LinearScale } from "chart.js";
+import FloatingBackButton from "../../components/FloatingBackButton";
 Chart.register(CategoryScale, LinearScale, BarElement);
 const CountUp = dynamic(() => import("react-countup"), {
   ssr: false,
@@ -220,6 +221,9 @@ const Placements = ({ select }: { select: number }) => {
           </div>
         </div>
       </div>
+      <div className={styles.floatingButton}>
+          <FloatingBackButton />
+        </div>
     </div>
   );
 };
