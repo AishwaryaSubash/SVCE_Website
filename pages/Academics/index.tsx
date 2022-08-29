@@ -34,6 +34,7 @@ const Academics = () => {
   const scroll = useRef() as React.MutableRefObject<HTMLInputElement>;
   const matches = useMediaQuery("(max-width:700px)");
   const showSideBar = useMediaQuery("(max-width:600px)");
+  const draggable = useMediaQuery("(max-width:1000px)");
   const selectDepartment = (id: number) => {
     setDept(id - 1);
   };
@@ -379,7 +380,7 @@ const Academics = () => {
           </div>
           <div ref={scroll}></div>
           <motion.div
-            drag={!matches}
+            drag={!draggable}
             dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
             dragElastic={0.05}
             className={styles.deptComponent}
