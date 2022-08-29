@@ -15,7 +15,7 @@ const Background2 = () => {
       xmlns="http://www.w3.org/2000/svg"
       version="1.1"
     >
-      <g className={styles.g1} transform={`translate(${width}, 0)`}>
+      <g className={styles.g1} transform={`translate(${width},0)`}>
         <motion.path
           d="M0 486C-62.2 473.8 -124.5 461.5 -181.4 437.9C-238.3 414.3 -289.9 379.3 -336.6 336.6C-383.2 293.8 -424.9 243.4 -449 186C-473.1 128.6 -479.5 64.3 -486 0L0 0Z"
           fill="#da3f67"
