@@ -279,7 +279,11 @@ const SideBar = () => {
                 [styles.clickedTextWrapper]: clicked,
               })}
             >
-              <FaRegNewspaper />
+              <Link href="/NewsAndEvents">
+                <div>
+                  <FaRegNewspaper />
+                </div>
+              </Link>
               {clicked && (
                 <motion.div
                   initial={{ x: 300, opacity: 0 }}
@@ -287,7 +291,7 @@ const SideBar = () => {
                   className={styles.clickedText}
                   transition={{ delay: 0.25 }}
                 >
-                  News and Events
+                  <Link href="/NewsAndEvents">News and Events</Link>
                 </motion.div>
               )}
             </div>
