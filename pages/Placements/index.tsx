@@ -24,11 +24,11 @@ const Placements = ({ select }: { select: number }) => {
   const showSideBar = useMediaQuery("(max-width:600px)");
   const [isOpen, setIsOpen] = useState(false);
   const data = {
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
     datasets: [
       {
-        label: "# of Votes",
-        data: [99, 49, 37, 56, 23, 33],
+        label: "Average CTC (in L)",
+        data: [4.05, 4.2, 4.4, 4.55, 4.7, 4.7, 5.44],
         backgroundColor: [
           "rgba(255, 99, 132, 0.2)",
           "rgba(54, 162, 235, 0.2)",
@@ -36,6 +36,7 @@ const Placements = ({ select }: { select: number }) => {
           "rgba(75, 192, 192, 0.2)",
           "rgba(153, 102, 255, 0.2)",
           "rgba(255, 159, 64, 0.2)",
+          "lightgreen",
         ],
         borderColor: [
           "rgba(255, 99, 132, 1)",
@@ -44,6 +45,7 @@ const Placements = ({ select }: { select: number }) => {
           "rgba(75, 192, 192, 1)",
           "rgba(153, 102, 255, 1)",
           "rgba(255, 159, 64, 1)",
+          "olive green",
         ],
         borderWidth: 1,
       },
@@ -61,8 +63,8 @@ const Placements = ({ select }: { select: number }) => {
     },
     scales: {
       y: {
-        min: 0,
-        max: 100,
+        min: 4.0,
+        max: 6.0,
       },
     },
   };
@@ -217,7 +219,6 @@ const Placements = ({ select }: { select: number }) => {
                           duration={3}
                           decimals={s.id == 8 ? 2 : 0}
                           suffix={s.id == 8 ? "%" : ""}
-                          onStart={() => console.log("hi")}
                           preserveValue={false}
                         >
                           {({ countUpRef }) => {
