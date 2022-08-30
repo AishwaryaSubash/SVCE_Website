@@ -208,7 +208,7 @@ const Placements = ({ select }: { select: number }) => {
                       >
                         {s.name}
 
-                        <CountUp start={viewPortEntered ? 100 : 0} end={100}>
+                        <CountUp end={0}>
                           {({ countUpRef }) => {
                             return (
                               <VisibilitySensor
