@@ -26,7 +26,7 @@ const Placements = ({ select }: { select: number }) => {
     datasets: [
       {
         label: "# of Votes",
-        data: [12, 19, 3, 5, 2, 3],
+        data: [99, 49, 37, 56, 23, 33],
         backgroundColor: [
           "rgba(255, 99, 132, 0.2)",
           "rgba(54, 162, 235, 0.2)",
@@ -46,6 +46,23 @@ const Placements = ({ select }: { select: number }) => {
         borderWidth: 1,
       },
     ],
+  };
+  const opt = {
+    animations: {
+      tension: {
+        duration: 1200,
+        easing: "linear",
+        from: 1,
+        to: 0,
+        loop: true,
+      },
+    },
+    scales: {
+      y: {
+        min: 0,
+        max: 100,
+      },
+    },
   };
   return (
     <div className={styles.desktop}>
@@ -76,17 +93,9 @@ const Placements = ({ select }: { select: number }) => {
                 <motion.div layout className={styles.child} />
               </motion.div>
               <motion.div> */}
-              <div className={styles.graph}>
-
-                <Bar
-                  data={data}
-                  width={400}
-                  height={200}
-                  options={{
-                    maintainAspectRatio: false,
-                  }}
-                />
-              </div>
+                <div className={styles.graph}>
+                  <Bar data={data} options={opt} width={400} height={200} />
+                </div>
                 <div className={styles.heading}>Placement Cell in SVCE</div>
                 <div className={styles.text}>
                   The Placement cell is one of the important department in SVCE.
@@ -205,6 +214,7 @@ const Placements = ({ select }: { select: number }) => {
                           suffix={s.id == 8 ? "%" : ""}
                           onStart={() => console.log("hi")}
                           redraw={true}
+                          preserveValue={false}
                         >
                           {({ countUpRef }) => (
                             <div>
@@ -222,8 +232,8 @@ const Placements = ({ select }: { select: number }) => {
         </div>
       </div>
       <div className={styles.floatingButton}>
-          <FloatingBackButton />
-        </div>
+        <FloatingBackButton />
+      </div>
     </div>
   );
 };
