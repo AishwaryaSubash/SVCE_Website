@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Bar } from "react-chartjs-2";
 import SideBar from "../../components/SideBar";
+import VisibilitySensor from "react-visibility-sensor";
 import { Statistics as s } from "../../Placement";
 // import CountUp from "react-countup";
 import styles from "./Placements.module.scss";
@@ -19,6 +20,7 @@ const Background = dynamic(() => import("../../components/Background"), {
   ssr: false,
 });
 const Placements = ({ select }: { select: number }) => {
+  const [viewPortEntered, setViewPortEntered] = useState(false);
   const showSideBar = useMediaQuery("(max-width:600px)");
   const [isOpen, setIsOpen] = useState(false);
   const data = {
@@ -205,6 +207,25 @@ const Placements = ({ select }: { select: number }) => {
                         })}
                       >
                         {s.name}
+
+                        <CountUp start={viewPortEntered ? 0 : 0} end={100}>
+                          {({ countUpRef }) => {
+                            return (
+                              <VisibilitySensor
+                                active={!viewPortEntered}
+                                onChange={(isVisible: any) => {
+                                  if (isVisible) {
+                                    setViewPortEntered(true);
+                                  }
+                                }}
+                                delayedCall
+                              >
+                                <span ref={countUpRef}></span>
+                              </VisibilitySensor>
+                            );
+                          }}
+                        </CountUp>
+
                         <CountUp
                           start={0}
                           end={s.count}
@@ -217,7 +238,7 @@ const Placements = ({ select }: { select: number }) => {
                         >
                           {({ countUpRef }) => (
                             <div>
-                              <span ref={countUpRef} />
+                              <span ref={countUpRef}></span>
                             </div>
                           )}
                         </CountUp>
