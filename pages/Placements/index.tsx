@@ -66,6 +66,7 @@ const Placements = ({ select }: { select: number }) => {
       },
     },
   };
+  const endcount: any = "";
   return (
     <div className={styles.desktop}>
       <div className={styles.bg}>
@@ -207,8 +208,18 @@ const Placements = ({ select }: { select: number }) => {
                         })}
                       >
                         {s.name}
+                        <br />
 
-                        <CountUp end={0}>
+                        <CountUp
+                          start={0}
+                          end={s.count}
+                          delay={0}
+                          duration={3}
+                          decimals={s.id == 8 ? 2 : 0}
+                          suffix={s.id == 8 ? "%" : ""}
+                          onStart={() => console.log("hi")}
+                          preserveValue={false}
+                        >
                           {({ countUpRef }) => {
                             return (
                               <VisibilitySensor
@@ -224,23 +235,6 @@ const Placements = ({ select }: { select: number }) => {
                               </VisibilitySensor>
                             );
                           }}
-                        </CountUp>
-
-                        <CountUp
-                          start={0}
-                          end={s.count}
-                          delay={0}
-                          duration={3}
-                          decimals={s.id == 8 ? 2 : 0}
-                          suffix={s.id == 8 ? "%" : ""}
-                          onStart={() => console.log("hi")}
-                          preserveValue={false}
-                        >
-                          {({ countUpRef }) => (
-                            <div>
-                              <span ref={countUpRef}></span>
-                            </div>
-                          )}
                         </CountUp>
                       </motion.div>
                     </motion.div>
