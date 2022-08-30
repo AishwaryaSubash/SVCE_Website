@@ -208,12 +208,11 @@ const Placements = ({ select }: { select: number }) => {
                         <CountUp
                           start={0}
                           end={s.count}
-                          delay={1}
+                          delay={0}
                           duration={3}
                           decimals={s.id == 8 ? 2 : 0}
                           suffix={s.id == 8 ? "%" : ""}
                           onStart={() => console.log("hi")}
-                          redraw={true}
                           preserveValue={false}
                         >
                           {({ countUpRef }) => (
