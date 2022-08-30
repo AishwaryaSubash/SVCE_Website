@@ -148,8 +148,10 @@ const NewsAndEvents = () => {
               layout
               initial={{ borderRadius: 25 }}
             >
-              {items.map((item) => (
-                <Item item={item} />
+              {items.map((item, i) => (
+                <div key={i}>
+                  <Item item={item} key={i} />
+                </div>
               ))}
             </motion.ul>
           </LayoutGroup>
