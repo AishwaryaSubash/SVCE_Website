@@ -94,7 +94,7 @@ const Placements = ({ select }: { select: number }) => {
               </motion.div>
               <motion.div> */}
                 <div className={styles.graph}>
-                  <Bar data={data} options={opt} width={400} height={200} />
+                  <Bar data={data} width={400} height={200} />
                 </div>
                 <div className={styles.heading}>Placement Cell in SVCE</div>
                 <div className={styles.text}>
