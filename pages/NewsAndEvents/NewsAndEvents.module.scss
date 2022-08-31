@@ -29,6 +29,14 @@
   align-items: center;
   overflow: hidden;
 }
+.logoContainer{
+  padding: 20px;
+  width: 97%;
+  padding-right: 18px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
 .ul,
 .li {
   list-style: none;

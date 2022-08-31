@@ -30,7 +30,13 @@ function Item({ item, key }: { item: ItemType; key: number }) {
     >
       <motion.div layout className={styles.listContainer}>
         <div className={styles.avatar}>
-          <Image className={styles.image} src={item.src} width={50} height={50} alt={`NEWS`}/>
+          <Image
+            className={styles.image}
+            src={item.src}
+            width={50}
+            height={50}
+            alt={`NEWS`}
+          />
         </div>
         <div>{item.title}</div>
       </motion.div>
@@ -153,6 +159,16 @@ const NewsAndEvents = () => {
         </div>
         {!showSideBar && <div className={styles.emptyForAReason}></div>}
         <div className={styles.innerContainer}>
+          <div className={styles.logoContainer}>
+            {showSideBar && <div className={styles.emptyForAReason}></div>}
+            <Image
+              className={styles.logo}
+              src="/images/svce.png"
+              alt="SVCE"
+              width={150}
+              height={30}
+            />
+          </div>
           <h1 className={styles.header}>News And Events</h1>
           <LayoutGroup>
             <motion.ul
