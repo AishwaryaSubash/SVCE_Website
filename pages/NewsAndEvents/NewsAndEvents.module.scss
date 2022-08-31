@@ -29,6 +29,14 @@
   align-items: center;
   overflow: hidden;
 }
+.logoContainer{
+  padding: 20px;
+  width: 97%;
+  padding-right: 18px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
 .ul,
 .li {
   list-style: none;
@@ -56,10 +64,11 @@
 }
 
 .avatar {
-  width: 40px;
-  height: 40px;
-  background-color: #666;
-  border-radius: 20px;
+  width: 100px;
+  height: 50px;
+}
+.image{
+  border-radius: 50%;
 }
 .row {
   width: 100%;
