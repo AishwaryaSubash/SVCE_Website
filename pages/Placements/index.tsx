@@ -30,44 +30,56 @@ const Placements = ({ select }: { select: number }) => {
         label: "Average CTC (in L)",
         data: [4.05, 4.2, 4.4, 4.55, 4.7, 4.7, 5.44],
         backgroundColor: [
-          "rgba(255, 99, 132, 0.2)",
-          "rgba(54, 162, 235, 0.2)",
-          "rgba(255, 206, 86, 0.2)",
-          "rgba(75, 192, 192, 0.2)",
-          "rgba(153, 102, 255, 0.2)",
-          "rgba(255, 159, 64, 0.2)",
-          "lightgreen",
+          "#E7F2F8cd",
+          "#74BDCBcd",
+          "#EFE7BCcd",
+          "#36EEE0cd",
+          "#FAE8E0cd",
+          "#BCECE0cd",
+
+          "#FFA384cd",
         ],
-        borderColor: [
-          "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
-          "rgba(75, 192, 192, 1)",
-          "rgba(153, 102, 255, 1)",
-          "rgba(255, 159, 64, 1)",
-          "olive green",
-        ],
+        // borderColor: ["#E7F2F8", "#74BDCB", "#FFA384", "#EFE7BC"],
         borderWidth: 1,
       },
     ],
   };
-  const opt = {
-    animations: {
-      tension: {
-        duration: 1200,
-        easing: "linear",
-        from: 1,
-        to: 0,
-        loop: true,
-      },
+  const options = {
+    title: {
+      display: true,
+      text: "Chart Title",
     },
     scales: {
-      y: {
-        min: 4.0,
-        max: 6.0,
-      },
+      y: [
+        {
+          min: 0,
+          max: 100,
+        },
+      ],
     },
   };
+  /*
+  const opt = {
+    animations: [
+      {
+        tension: {
+          duration: 1200,
+          easing: "linear",
+          from: 1,
+          to: 0,
+          loop: true,
+        },
+      },
+    ],
+    scales: [
+      {
+        yAxes: {
+          min: 4.0,
+          max: 6.0,
+        },
+      },
+    ],
+  };*/
   const endcount: any = "";
   return (
     <div className={styles.desktop}>
@@ -98,8 +110,21 @@ const Placements = ({ select }: { select: number }) => {
                 <motion.div layout className={styles.child} />
               </motion.div>
               <motion.div> */}
-                <div className={styles.graph}>
-                  <Bar data={data} width={400} height={200} />
+                <div className={styles.chartStats}>
+                  <p className={styles.packOff}>Packages offered</p>
+                  <div className="barChart">
+                    <p className={styles.label}>{data.datasets[0].label}</p>
+
+                    <div className={styles.graph}>
+                      <Bar
+                        className={styles.bar}
+                        data={data}
+                        // options={options}
+                        width={400}
+                        height={200}
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div className={styles.heading}>Placement Cell in SVCE</div>
                 <div className={styles.text}>
