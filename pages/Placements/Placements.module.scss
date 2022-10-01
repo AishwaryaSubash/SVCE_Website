@@ -19,10 +19,10 @@
   position: relative;
 }
 .graph {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 70%;
 }
 .emptyForAReason {
   width: 80px;
@@ -41,11 +41,34 @@
   align-content: center;
   justify-content: center;
 }
+.chartStats {
+}
+
+.packOff {
+  padding-top: 5.2px;
+  font-size: 50px;
+  font-weight: 400;
+  margin: 0;
+}
+.label {
+  font-size: 33px;
+  margin: 20px 0px;
+}
+.barChart {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+.bar {
+  color: black;
+}
 .textContainer {
   display: flex;
   flex-direction: column;
   flex: 5;
   z-index: 5;
+  color: white;
 }
 .content {
   margin: 8px;
