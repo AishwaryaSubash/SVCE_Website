@@ -25,6 +25,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import FloatingBackButton from "../../components/FloatingBackButton";
+import { useHorizontalScroll } from "../../Hooks/useSideScroll";
 
 const Background = dynamic(() => import("../../components/Background2"), {
   ssr: false,
@@ -35,6 +36,7 @@ const Academics = () => {
   const matches = useMediaQuery("(max-width:700px)");
   const showSideBar = useMediaQuery("(max-width:600px)");
   const draggable = useMediaQuery("(max-width:1000px)");
+  const scrollRef: any = useHorizontalScroll();
   const selectDepartment = (id: number) => {
     setDept(id - 1);
   };
@@ -59,7 +61,7 @@ const Academics = () => {
         <div className={styles.sideBar}>
           <SideBar />
         </div>
-        
+
         {!showSideBar && <div className={styles.emptyForAReason}></div>}
         <div className={styles.innerContainer}>
           <header className={styles.header}>
@@ -73,7 +75,7 @@ const Academics = () => {
             />
           </header>
           <div className={styles.mainContainer}>
-            <div className={styles.departmentC}>
+            <div className={styles.departmentC} ref={scrollRef}>
               <motion.div
                 className={styles.dept}
                 initial={

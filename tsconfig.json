@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_document.js", "components/Background/index.tsx", "Hooks/useWindowDimensions.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_document.js", "components/Background/index.tsx", "Hooks/useWindowDimensions.ts", "Hooks/useSideScroll.js"],
   "exclude": ["node_modules"]
 }
