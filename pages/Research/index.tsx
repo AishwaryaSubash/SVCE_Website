@@ -1,5 +1,5 @@
-import React, { EventHandler, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import styles from "./Research.module.scss";
 import dynamic from "next/dynamic";
 import Head from "next/head";
@@ -23,7 +23,7 @@ const Backdrop = ({
   onClick: React.MouseEventHandler<HTMLButtonElement>;
 }) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} >
       <motion.div
         className={styles.backDrop}
         initial={{ opacity: 0 }}
