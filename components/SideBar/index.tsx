@@ -232,7 +232,11 @@ const SideBar = () => {
                 [styles.clickedTextWrapper]: clicked,
               })}
             >
-              <IoIosFlask />
+              <Link href="/Research">
+                <div>
+                  <IoIosFlask />
+                </div>
+              </Link>
               {clicked && (
                 <motion.div
                   initial={{ x: 300, opacity: 0 }}
@@ -240,7 +244,7 @@ const SideBar = () => {
                   className={styles.clickedText}
                   transition={{ delay: 0.25 }}
                 >
-                  Research
+                  <Link href="/Research">Research</Link>
                 </motion.div>
               )}
             </div>

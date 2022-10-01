@@ -59,7 +59,7 @@ const Academics = () => {
         <div className={styles.sideBar}>
           <SideBar />
         </div>
-
+        
         {!showSideBar && <div className={styles.emptyForAReason}></div>}
         <div className={styles.innerContainer}>
           <header className={styles.header}>

@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 import Image from "next/image";
 import React, { useState } from "react";
+import FloatingBackButton from "../../components/FloatingBackButton";
 import SideBar from "../../components/SideBar";
 import styles from "./NewsAndEvents.module.scss";
 const Background2 = dynamic(() => import("../../components/Background2"), {
@@ -183,6 +184,9 @@ const NewsAndEvents = () => {
               ))}
             </motion.ul>
           </LayoutGroup>
+        </div>
+        <div className={styles.floatingButton}>
+          <FloatingBackButton />
         </div>
       </div>
     </div>

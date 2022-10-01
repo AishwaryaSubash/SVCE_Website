@@ -3,7 +3,6 @@ import { Bar } from "react-chartjs-2";
 import SideBar from "../../components/SideBar";
 import VisibilitySensor from "react-visibility-sensor";
 import { Statistics as s } from "../../Placement";
-// import CountUp from "react-countup";
 import styles from "./Placements.module.scss";
 import cn from "classnames";
 import Head from "next/head";
@@ -88,16 +87,6 @@ const Placements = ({ select }: { select: number }) => {
           <div className={styles.mainContainer}>
             <div className={styles.textContainer}>
               <div className={styles.content}>
-                {/* <motion.div
-                layout
-                data-isOpen={isOpen}
-                initial={{ borderRadius: 25 }}
-                className={styles.parent}
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                <motion.div layout className={styles.child} />
-              </motion.div>
-              <motion.div> */}
                 <div className={styles.graph}>
                   <Bar data={data} width={400} height={200} />
                 </div>
