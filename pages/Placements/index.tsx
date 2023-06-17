@@ -18,7 +18,7 @@ const CountUp = dynamic(() => import("react-countup"), {
 const Background = dynamic(() => import("../../components/Background"), {
   ssr: false,
 });
-const Placements = ({ select }: { select: number }) => {
+export default function Placements({ select }: { select: number }) {
   const [viewPortEntered, setViewPortEntered] = useState(false);
   const showSideBar = useMediaQuery("(max-width:600px)");
   const [isOpen, setIsOpen] = useState(false);
@@ -270,6 +270,4 @@ const Placements = ({ select }: { select: number }) => {
       </div>
     </div>
   );
-};
-
-export default Placements;
+}
