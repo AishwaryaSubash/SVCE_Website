@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Bar } from "react-chartjs-2";
 import SideBar from "../../components/SideBar";
 import VisibilitySensor from "react-visibility-sensor";
-import { Statistics as s } from "../Placement";
+import { Statistics as s } from "../../Placement";
 import styles from "./Placements.module.scss";
 import cn from "classnames";
 import Head from "next/head";
