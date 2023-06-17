@@ -18,11 +18,17 @@
 .desktop {
   position: relative;
 }
+.report {
+}
+.reportHead {
+  font-size: 30px;
+  font-weight: 400;
+}
 .graph {
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   width: 90%;
-  height: 70%;
+  // height: 70%;
 }
 .emptyForAReason {
   width: 80px;
@@ -35,7 +41,7 @@
 }
 .mainContainer {
   display: flex;
-  overflow: hidden;
+  // overflow: hidden;
   padding: 5px 20px 5px 20px;
   flex-direction: row;
   align-content: center;
@@ -75,27 +81,40 @@
   height: 90vh;
   overflow-y: scroll;
 }
+.newSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 15px 0px;
+}
 .heading {
   padding-top: 5.2px;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 400;
 }
 .text {
-  font-size: 23px;
+  font-size: 18px;
 }
 .statscontainer {
   flex: 4;
   height: 96vh;
-  padding-left: 10px;
+  padding-left: 20px;
   z-index: 3;
 }
 .stathead {
-  font-size: 50px;
+  padding: 20px 0px 0px 0px;
+  font-size: 30px;
   color: white;
+}
+.gridContainer {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .stats {
   gap: 10px;
-  height: 87vh;
+  height: 70vh;
 
   display: grid;
   align-items: center;
@@ -109,7 +128,7 @@
   background-color: #90afc5;
   overflow: hidden;
   .s1 {
-    font-size: 33px;
+    font-size: 21px;
     padding: 10px;
   }
 }
@@ -127,7 +146,7 @@
   }
   .s2 {
     padding: 5px;
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 .stats3 {
@@ -145,7 +164,7 @@
   }
   .s3 {
     padding: 10px;
-    font-size: 30px;
+    font-size: 23px;
   }
 }
 .stats4 {
@@ -162,7 +181,7 @@
   }
   .s4 {
     padding: 5px;
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 .stats5 {
@@ -180,7 +199,7 @@
   }
   .s5 {
     padding: 10px;
-    font-size: 33px;
+    font-size: 25px;
   }
 }
 
@@ -199,7 +218,7 @@
   }
   .s6 {
     padding: 10px;
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 .stats7 {
@@ -211,7 +230,7 @@
   background-color: #7e675e;
   .s7 {
     padding: 10px;
-    font-size: 28px;
+    font-size: 20px;
   }
 }
 .stats8 {
@@ -230,7 +249,7 @@
   }
   .s8 {
     padding: 10px;
-    font-size: 35px;
+    font-size: 26px;
   }
 }
 .stats9 {
@@ -242,13 +261,22 @@
   background-color: #acbd78;
   .s9 {
     padding: 5px;
-    font-size: 26px;
+    font-size: 21px;
   }
 }
 .people {
-  font-size: 20px;
+  .t1 {
+    font-size: 20px;
+  }
+  .p1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    padding: 2px;
+  }
 }
-
+@media screen and (max-width: 1200px) {
+}
 @media screen and (max-width: 600px) {
   .sideBar {
     width: 240px;
@@ -256,14 +284,26 @@
 
   .mainContainer {
     padding: 5px;
-    overflow-y: scroll;
+    // overflow-y: scroll;
     flex-direction: column;
   }
   .content {
     padding: 10px;
     margin: 2px;
+    height: auto;
+    overflow-y: visible;
     /*height: 100vh;
     overflow-y: auto;*/
+  }
+  .reportHead {
+    font-size: 17px;
+  }
+  .gridContainer {
+    align-items: flex-start;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .newSection {
   }
   .heading {
     font-size: 17px;
@@ -277,6 +317,7 @@
   }
   .stathead {
     font-size: 17px;
+    margin: 5px 0px 17px 0px;
   }
   .stats {
     font-size: 18px;
@@ -337,17 +378,11 @@
   }
 
   .people {
-    font-size: 11px;
-    .t1,
-    .t2,
-    .t3,
-    .t4 {
+    .t1 {
       font-size: 12px;
     }
-    .p1,
-    .p2,
-    .p3,
-    .p4 {
+    .p1 {
+      font-size: 11px;
       padding: 2px;
     }
   }

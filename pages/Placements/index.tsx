@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Bar } from "react-chartjs-2";
 import SideBar from "../../components/SideBar";
 import VisibilitySensor from "react-visibility-sensor";
-import { Statistics as s } from "../../Placement";
+import { Statistics as s } from "../Placement";
 import styles from "./Placements.module.scss";
 import cn from "classnames";
 import Head from "next/head";
@@ -35,7 +35,7 @@ const Placements = ({ select }: { select: number }) => {
           "rgba(75, 192, 192, 0.2)",
           "rgba(153, 102, 255, 0.2)",
           "rgba(255, 159, 64, 0.2)",
-          "lightgreen",
+          "rgba(15, 159, 64, 0.2)",
         ],
         borderColor: [
           "rgba(255, 99, 132, 1)",
@@ -44,7 +44,7 @@ const Placements = ({ select }: { select: number }) => {
           "rgba(75, 192, 192, 1)",
           "rgba(153, 102, 255, 1)",
           "rgba(255, 159, 64, 1)",
-          "olive green",
+          "rgba(15, 159, 64, 1)",
         ],
         borderWidth: 1,
       },
@@ -87,149 +87,179 @@ const Placements = ({ select }: { select: number }) => {
           <div className={styles.mainContainer}>
             <div className={styles.textContainer}>
               <div className={styles.content}>
-                <div className={styles.graph}>
-                  <Bar data={data} width={400} height={200} />
-                </div>
-                <div className={styles.heading}>Placement Cell in SVCE</div>
-                <div className={styles.text}>
-                  The Placement cell is one of the important department in SVCE.
-                  Knowing that you will be guided after your graduation so that
-                  you land a job helps you feel secure. This is the reason why
-                  we have a dedicated placement cell that helps, guides, and
-                  advises students about the future. In SVCE, students come from
-                  all walks of lives. They come from different parts of the
-                  country including rural areas. Some individuals may not be
-                  aware of how things work. Some others may not be confident
-                  enough to walk into an interview even though they are skilled.
-                  These problems are more common and our skilled placement panel
-                  are helping students to get placed in top companies.
+                <div
+                  className={styles.newSection}
+                  style={{ padding: "35px 0px 0px 0px" }}
+                >
+                  <div className={styles.heading}>Placement Cell in SVCE</div>
+                  <div className={styles.text}>
+                    The Placement cell is one of the important department in
+                    SVCE. Knowing that you will be guided after your graduation
+                    so that you land a job helps you feel secure. This is the
+                    reason why we have a dedicated placement cell that helps,
+                    guides, and advises students about the future. In SVCE,
+                    students come from all walks of lives. They come from
+                    different parts of the country including rural areas. Some
+                    individuals may not be aware of how things work. Some others
+                    may not be confident enough to walk into an interview even
+                    though they are skilled. These problems are more common and
+                    our skilled placement panel are helping students to get
+                    placed in top companies.
+                  </div>
                 </div>
                 {/* </motion.div> */}
-                <div className={styles.heading}>Training</div>
-                <div className={styles.text}>
-                  Placement training plays a major role in shaping up the career
-                  goals of students. It is the dream of every engineering
-                  student to get placed in a top organization visiting their
-                  campus for recruitment. Keeping this key aspect into
-                  consideration, it is realized that training is important for
-                  engineering students to enhance their employability skills and
-                  achieve good placement in various Industries.
+                <div className={styles.newSection}>
+                  <div className={styles.heading}>Training</div>
+                  <div className={styles.text}>
+                    Placement training plays a major role in shaping up the
+                    career goals of students. It is the dream of every
+                    engineering student to get placed in a top organization
+                    visiting their campus for recruitment. Keeping this key
+                    aspect into consideration, it is realized that training is
+                    important for engineering students to enhance their
+                    employability skills and achieve good placement in various
+                    Industries.
+                  </div>
                 </div>
-                <div className={styles.heading}>
-                  Office of Training and Placement
+                <div className={styles.newSection}>
+                  <div className={styles.heading}>
+                    Office of Training and Placement
+                  </div>
+                  <div
+                    className={styles.people}
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "5px",
+                    }}
+                  >
+                    <div className={styles.p1}>
+                      <div className={styles.t1}>
+                        Prof. S. Muraleedharan, MS, MBA
+                      </div>
+                      <div>Chief Placement Officer</div>
+                    </div>
+                    <div className={styles.p1}>
+                      <div className={styles.t1}>
+                        Mr. E. Ramachandiran, M.Tech.
+                      </div>
+                      <div>Assistant Placement Officer</div>
+                    </div>
+                    <div className={styles.p1}>
+                      <div className={styles.t1}>
+                        Mr. A. K. Boobalasenthilraj, M.E., Ph.D.
+                      </div>
+                      <div>Assistant Placement Officer</div>
+                    </div>
+                    <div className={styles.p1}>
+                      <div className={styles.t1}>
+                        Mr. D. Pugazharasu, M.A., MCA.
+                      </div>
+                      <div>Junior Assistant </div>
+                    </div>
+                  </div>
                 </div>
-                <div className={styles.people}>
-                  <div className={styles.p1}>
-                    <div className={styles.t1}>Chief Placement Officer</div>
-                    Prof. S. Muraleedharan, MS, MBA
-                  </div>
-                  <div className={styles.p2}>
-                    <div className={styles.t2}>Assistant Placement Officer</div>
-                    Mr. E. Ramachandiran, M.Tech.
-                  </div>
-                  <div className={styles.p3}>
-                    <div className={styles.t3}>Assistant Placement Officer</div>
-                    Mr. A. K. Boobalasenthilraj, M.E., Ph.D.
-                  </div>
-                  <div className={styles.p4}>
-                    <div className={styles.t4}>Junior Assistant</div>
-                    Mr. D. Pugazharasu, M.A., MCA.
+                <div className={styles.report}>
+                  <p className={styles.reportHead}>Placement Report</p>
+                  <div className={styles.graph}>
+                    <Bar data={data} width={400} height={200} />
                   </div>
                 </div>
               </div>
             </div>
             <div className={styles.statscontainer}>
               <div className={styles.stathead}>Statistics</div>
-
-              <div className={styles.stats}>
-                {s.map((s, i) => {
-                  return (
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      whileHover={{ scale: 1.1 }}
-                      transition={{ delay: 0.01, duration: 1 }}
-                      key={i}
-                      className={cn({
-                        [styles.stats1]: s.id === 1,
-                        [styles.stats2]: s.id === 2,
-                        [styles.stats3]: s.id === 3,
-                        [styles.stats4]: s.id === 4,
-                        [styles.stats5]: s.id === 5,
-                        [styles.stats6]: s.id === 6,
-                        [styles.stats7]: s.id === 7,
-                        [styles.stats8]: s.id === 8,
-                        [styles.stats9]: s.id === 9,
-                      })}
-                    >
+              <div className={styles.gridContainer}>
+                <div className={styles.stats}>
+                  {s.map((s, i) => {
+                    return (
                       <motion.div
-                        initial={
-                          s.id === 1
-                            ? { opacity: 0, y: -80 }
-                            : s.id === 2
-                            ? { opacity: 0, x: -60 }
-                            : s.id === 3
-                            ? { opacity: 0, x: 80 }
-                            : s.id === 4
-                            ? { opacity: 0, x: -80 }
-                            : s.id === 5
-                            ? { opacity: 0, x: 80 }
-                            : s.id === 6
-                            ? { opacity: 0, y: 90 }
-                            : s.id === 7
-                            ? { opacity: 0, x: -120 }
-                            : s.id === 8
-                            ? { opacity: 0, x: 80 }
-                            : s.id === 9
-                            ? { opacity: 0, y: 80 }
-                            : { opacity: 0 }
-                        }
-                        animate={{ opacity: 1, x: 0, y: 0 }}
-                        transition={{ delay: 0.01, duration: 3 }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        whileHover={{ scale: 1.1 }}
+                        transition={{ delay: 0.01, duration: 1 }}
+                        key={i}
                         className={cn({
-                          [styles.s1]: s.id === 1,
-                          [styles.s2]: s.id === 2,
-                          [styles.s3]: s.id === 3,
-                          [styles.s4]: s.id === 4,
-                          [styles.s5]: s.id === 5,
-                          [styles.s6]: s.id === 6,
-                          [styles.s7]: s.id === 7,
-                          [styles.s8]: s.id === 8,
-                          [styles.s9]: s.id === 9,
+                          [styles.stats1]: s.id === 1,
+                          [styles.stats2]: s.id === 2,
+                          [styles.stats3]: s.id === 3,
+                          [styles.stats4]: s.id === 4,
+                          [styles.stats5]: s.id === 5,
+                          [styles.stats6]: s.id === 6,
+                          [styles.stats7]: s.id === 7,
+                          [styles.stats8]: s.id === 8,
+                          [styles.stats9]: s.id === 9,
                         })}
                       >
-                        {s.name}
-                        <br />
-
-                        <CountUp
-                          start={0}
-                          end={s.count}
-                          delay={0}
-                          duration={3}
-                          decimals={s.id == 8 ? 2 : 0}
-                          suffix={s.id == 8 ? "%" : ""}
-                          preserveValue={false}
+                        <motion.div
+                          initial={
+                            s.id === 1
+                              ? { opacity: 0, y: -80 }
+                              : s.id === 2
+                              ? { opacity: 0, x: -60 }
+                              : s.id === 3
+                              ? { opacity: 0, x: 80 }
+                              : s.id === 4
+                              ? { opacity: 0, x: -80 }
+                              : s.id === 5
+                              ? { opacity: 0, x: 80 }
+                              : s.id === 6
+                              ? { opacity: 0, y: 90 }
+                              : s.id === 7
+                              ? { opacity: 0, x: -120 }
+                              : s.id === 8
+                              ? { opacity: 0, x: 80 }
+                              : s.id === 9
+                              ? { opacity: 0, y: 80 }
+                              : { opacity: 0 }
+                          }
+                          animate={{ opacity: 1, x: 0, y: 0 }}
+                          transition={{ delay: 0.01, duration: 3 }}
+                          className={cn({
+                            [styles.s1]: s.id === 1,
+                            [styles.s2]: s.id === 2,
+                            [styles.s3]: s.id === 3,
+                            [styles.s4]: s.id === 4,
+                            [styles.s5]: s.id === 5,
+                            [styles.s6]: s.id === 6,
+                            [styles.s7]: s.id === 7,
+                            [styles.s8]: s.id === 8,
+                            [styles.s9]: s.id === 9,
+                          })}
                         >
-                          {({ countUpRef }) => {
-                            return (
-                              <VisibilitySensor
-                                active={!viewPortEntered}
-                                onChange={(isVisible: any) => {
-                                  if (isVisible) {
-                                    setViewPortEntered(true);
-                                  }
-                                }}
-                                delayedCall
-                              >
-                                <span ref={countUpRef}></span>
-                              </VisibilitySensor>
-                            );
-                          }}
-                        </CountUp>
+                          {s.name}
+                          <br />
+
+                          <CountUp
+                            start={0}
+                            end={s.count}
+                            delay={0}
+                            duration={3}
+                            decimals={s.id == 8 ? 2 : 0}
+                            suffix={s.id == 8 ? "%" : ""}
+                            preserveValue={false}
+                          >
+                            {({ countUpRef }) => {
+                              return (
+                                <VisibilitySensor
+                                  active={!viewPortEntered}
+                                  onChange={(isVisible: any) => {
+                                    if (isVisible) {
+                                      setViewPortEntered(true);
+                                    }
+                                  }}
+                                  delayedCall
+                                >
+                                  <span ref={countUpRef}></span>
+                                </VisibilitySensor>
+                              );
+                            }}
+                          </CountUp>
+                        </motion.div>
                       </motion.div>
-                    </motion.div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>
