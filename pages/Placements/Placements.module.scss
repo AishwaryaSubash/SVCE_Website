@@ -27,8 +27,7 @@
 .graph {
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
-  width: 90%;
-  // height: 70%;
+  width: 100%;
 }
 .emptyForAReason {
   width: 80px;
@@ -85,7 +84,7 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding: 15px 0px;
+  padding: 15px 8px 15px 0px;
 }
 .heading {
   padding-top: 5.2px;
